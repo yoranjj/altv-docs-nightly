@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -64,11 +65,11 @@
 
             <main id="main-panel">
 
-                <div id="blackout"></div>
+                <div id="blackout" class="desktop-hide"></div>
 
                     
                     <div class="subnav navbar navbar-default">
-                      <div class="navbar-toggler back"></div>
+                      <div class="navbar-toggler back desktop-hide"></div>
                       <div class="navbar-toggler toc"></div>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -77,12 +78,33 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <form class="search-bar mobile-hide" role="search" id="search">
-                            <span class="navbar-toggler clear" id="search-query-clear"></span>
-                            <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                          </form>
-                          <div class="navbar-toggler search"></div>
+                          <div style="position: relative;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <span class="navbar-toggler clear" id="search-query-clear"></span>
+                              <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                              <span class="title">
+                                Search options:
+                              </span>
+                              <div class="option">
+                                <span class="filter">langs:</span>
+                                <span class="answer">js,ts,cs,lua</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">title:</span>
+                                <span class="answer">title</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">keywords:</span>
+                                <span class="answer">keywords</span>
+                              </div>
+                            </div>
+                            <div class="navbar-toggler search desktop-hide"></div>
+                          </div>
                       </div>
+                      <div class="navbar-toggler searchblip desktop-hide"></div>
                     </div>
 
                 <div class="content-region" role="main">
@@ -99,18 +121,18 @@
 
                             
                             <div id="search-results">
-                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="search-list"> <span></span></div>
                               <div class="sr-items">
                                 <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
                               </div>
-                              <ul id="pagination" data-first="" data-prev="❮" data-next="❯" data-last=""></ul>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="@altmp/altv-types.alt-client.WebView">
                                 <span class="small pull-right article mobile-hide" style="margin: 0;">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1110">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1124">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -168,7 +190,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1128">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_constructor" data-uid="@altmp/altv-types.alt-client.WebView.constructor">WebView(string, boolean)
   <span class="release-stage public"></span>
@@ -217,7 +239,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_constructor_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.constructor_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1128">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_constructor_1" data-uid="@altmp/altv-types.alt-client.WebView.constructor_1">WebView(string, IVector2)
   <span class="release-stage public"></span>
@@ -266,7 +288,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_constructor_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.constructor_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1128">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_constructor_2" data-uid="@altmp/altv-types.alt-client.WebView.constructor_2">WebView(string, IVector2, IVector2)
   <span class="release-stage public"></span>
@@ -324,7 +346,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_constructor_3.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.constructor_3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1128">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_constructor_3" data-uid="@altmp/altv-types.alt-client.WebView.constructor_3">WebView(string, boolean, IVector2, IVector2)
   <span class="release-stage public"></span>
@@ -391,7 +413,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_constructor_4.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.constructor_4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1128">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_constructor_4" data-uid="@altmp/altv-types.alt-client.WebView.constructor_4">WebView(string, number, string)
   <span class="release-stage public"></span>
@@ -451,7 +473,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_isVisible.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.isVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1112">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1126">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_isVisible" data-uid="@altmp/altv-types.alt-client.WebView.isVisible">isVisible
   <span class="release-stage public"></span>
@@ -485,7 +507,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_url.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.url%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1114">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1128">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_url" data-uid="@altmp/altv-types.alt-client.WebView.url">url
   <span class="release-stage public"></span>
@@ -521,7 +543,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_emit.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.emit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1166">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1180">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_emit" data-uid="@altmp/altv-types.alt-client.WebView.emit">emit(string, any[])
   <span class="release-stage public"></span>
@@ -570,7 +592,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_focus.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.focus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1196">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1210">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_focus" data-uid="@altmp/altv-types.alt-client.WebView.focus">focus()
   <span class="release-stage public"></span>
@@ -589,7 +611,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_off.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.off%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1175">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1189">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_off" data-uid="@altmp/altv-types.alt-client.WebView.off">off(string, (...args: any[]) =&gt; void)
   <span class="release-stage public"></span>
@@ -641,7 +663,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_on.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.on%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1183">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1197">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_on" data-uid="@altmp/altv-types.alt-client.WebView.on">on(string, (...args: any[]) =&gt; void)
   <span class="release-stage public"></span>
@@ -690,7 +712,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_on_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.on_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1183">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1197">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_on_1" data-uid="@altmp/altv-types.alt-client.WebView.on_1">on(&quot;load&quot;, () =&gt; void)
   <span class="release-stage public"></span>
@@ -739,7 +761,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebView_unfocus.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebView.unfocus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1201">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1215">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebView_unfocus" data-uid="@altmp/altv-types.alt-client.WebView.unfocus">unfocus()
   <span class="release-stage public"></span>

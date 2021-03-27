@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -62,11 +63,11 @@
 
             <main id="main-panel">
 
-                <div id="blackout"></div>
+                <div id="blackout" class="desktop-hide"></div>
 
                     
                     <div class="subnav navbar navbar-default">
-                      <div class="navbar-toggler back"></div>
+                      <div class="navbar-toggler back desktop-hide"></div>
                       <div class="navbar-toggler toc"></div>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -75,12 +76,33 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <form class="search-bar mobile-hide" role="search" id="search">
-                            <span class="navbar-toggler clear" id="search-query-clear"></span>
-                            <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                          </form>
-                          <div class="navbar-toggler search"></div>
+                          <div style="position: relative;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <span class="navbar-toggler clear" id="search-query-clear"></span>
+                              <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                              <span class="title">
+                                Search options:
+                              </span>
+                              <div class="option">
+                                <span class="filter">langs:</span>
+                                <span class="answer">js,ts,cs,lua</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">title:</span>
+                                <span class="answer">title</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">keywords:</span>
+                                <span class="answer">keywords</span>
+                              </div>
+                            </div>
+                            <div class="navbar-toggler search desktop-hide"></div>
+                          </div>
                       </div>
+                      <div class="navbar-toggler searchblip desktop-hide"></div>
                     </div>
 
                 <div class="content-region" role="main">
@@ -90,11 +112,11 @@
 
                             
                             <div id="search-results">
-                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="search-list"> <span></span></div>
                               <div class="sr-items">
                                 <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
                               </div>
-                              <ul id="pagination" data-first="" data-prev="❮" data-next="❯" data-last=""></ul>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="">
@@ -113,7 +135,7 @@
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync">https://www.nuget.org/packages/AltV.Net.EntitySync</a> // The core package with the sync logic
 <a href="https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent">https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent</a> // A optional package that will send the entity sync events to the client via server events</p>
 <h2 id="configure-the-entity-sync">Configure the Entity Sync</h2>
-<pre><code class="lang-csharp">AltEntitySync.Init(1, 100, (threadId) =&gt; false,
+<pre><code class="lang-csharp">AltEntitySync.Init(1, (threadId) =&gt; 100, (threadId) =&gt; false,
    (threadCount, repository) =&gt; new ServerEventNetworkLayer(threadCount, repository),
    (entity, threadCount) =&gt; (entity.Id % threadCount), 
    (entityId, entityType, threadCount) =&gt; (entityId % threadCount),
@@ -122,7 +144,7 @@
 </code></pre>
 <p>Now breakdown the parameters of the Init function:</p>
 <p>The first parameter is the thread count, this describes the number of thats that will run in parallel to calculate the streamed entities.</p>
-<p>The second parameter is the sync rate, it describes the interval in which each sync thread calculates the streamed entities.</p>
+<p>The second parameter is the sync rate, it describes the interval in which each sync thread calculates the streamed entities and can be configured per thread id.</p>
 <p>The third parameter is a bool with that you can enable net owner calculations and events.</p>
 <p>The fourth parameter is the Action that returns a new NetworkLayer for a repository. The ServerEventNetworkLayer is part of the second nuget package.</p>
 <p>The fifth parameter defines the thread the entity shoud use.</p>

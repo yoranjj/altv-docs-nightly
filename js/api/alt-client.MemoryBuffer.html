@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -64,11 +65,11 @@
 
             <main id="main-panel">
 
-                <div id="blackout"></div>
+                <div id="blackout" class="desktop-hide"></div>
 
                     
                     <div class="subnav navbar navbar-default">
-                      <div class="navbar-toggler back"></div>
+                      <div class="navbar-toggler back desktop-hide"></div>
                       <div class="navbar-toggler toc"></div>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -77,12 +78,33 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <form class="search-bar mobile-hide" role="search" id="search">
-                            <span class="navbar-toggler clear" id="search-query-clear"></span>
-                            <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                          </form>
-                          <div class="navbar-toggler search"></div>
+                          <div style="position: relative;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <span class="navbar-toggler clear" id="search-query-clear"></span>
+                              <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                              <span class="title">
+                                Search options:
+                              </span>
+                              <div class="option">
+                                <span class="filter">langs:</span>
+                                <span class="answer">js,ts,cs,lua</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">title:</span>
+                                <span class="answer">title</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">keywords:</span>
+                                <span class="answer">keywords</span>
+                              </div>
+                            </div>
+                            <div class="navbar-toggler search desktop-hide"></div>
+                          </div>
                       </div>
+                      <div class="navbar-toggler searchblip desktop-hide"></div>
                     </div>
 
                 <div class="content-region" role="main">
@@ -99,18 +121,18 @@
 
                             
                             <div id="search-results">
-                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="search-list"> <span></span></div>
                               <div class="sr-items">
                                 <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
                               </div>
-                              <ul id="pagination" data-first="" data-prev="❮" data-next="❯" data-last=""></ul>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="@altmp/altv-types.alt-client.MemoryBuffer">
                                 <span class="small pull-right article mobile-hide" style="margin: 0;">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1423">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1437">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -139,7 +161,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1423">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1437">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_constructor" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.constructor">MemoryBuffer(number)
   <span class="release-stage public"></span>
@@ -179,7 +201,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_address.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.address%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1448">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1462">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_address" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.address">address(number)
   <span class="release-stage public"></span>
@@ -232,7 +254,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_byte.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.byte%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1426">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1440">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_byte" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.byte">byte(number)
   <span class="release-stage public"></span>
@@ -285,7 +307,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_double.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.double%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1428">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1442">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_double" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.double">double(number)
   <span class="release-stage public"></span>
@@ -338,7 +360,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_float.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.float%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1430">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1444">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_float" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.float">float(number)
   <span class="release-stage public"></span>
@@ -391,7 +413,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_free.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.free%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1450">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1464">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_free" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.free">free()
   <span class="release-stage public"></span>
@@ -424,7 +446,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_int.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.int%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1432">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1446">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_int" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.int">int(number)
   <span class="release-stage public"></span>
@@ -477,7 +499,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_long.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.long%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1434">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1448">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_long" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.long">long(number)
   <span class="release-stage public"></span>
@@ -530,7 +552,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_short.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.short%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1436">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1450">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_short" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.short">short(number)
   <span class="release-stage public"></span>
@@ -583,7 +605,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_string.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.string%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1438">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1452">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_string" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.string">string(number, number)
   <span class="release-stage public"></span>
@@ -644,7 +666,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_ubyte.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.ubyte%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1440">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1454">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_ubyte" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.ubyte">ubyte(number)
   <span class="release-stage public"></span>
@@ -697,7 +719,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_uint.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.uint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1442">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1456">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_uint" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.uint">uint(number)
   <span class="release-stage public"></span>
@@ -750,7 +772,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_ulong.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.ulong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1444">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1458">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_ulong" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.ulong">ulong(number)
   <span class="release-stage public"></span>
@@ -803,7 +825,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_MemoryBuffer_ushort.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.MemoryBuffer.ushort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1446">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1460">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_MemoryBuffer_ushort" data-uid="@altmp/altv-types.alt-client.MemoryBuffer.ushort">ushort(number)
   <span class="release-stage public"></span>

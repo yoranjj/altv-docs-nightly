@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -64,11 +65,11 @@
 
             <main id="main-panel">
 
-                <div id="blackout"></div>
+                <div id="blackout" class="desktop-hide"></div>
 
                     
                     <div class="subnav navbar navbar-default">
-                      <div class="navbar-toggler back"></div>
+                      <div class="navbar-toggler back desktop-hide"></div>
                       <div class="navbar-toggler toc"></div>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -77,12 +78,33 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <form class="search-bar mobile-hide" role="search" id="search">
-                            <span class="navbar-toggler clear" id="search-query-clear"></span>
-                            <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                          </form>
-                          <div class="navbar-toggler search"></div>
+                          <div style="position: relative;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <span class="navbar-toggler clear" id="search-query-clear"></span>
+                              <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                              <span class="title">
+                                Search options:
+                              </span>
+                              <div class="option">
+                                <span class="filter">langs:</span>
+                                <span class="answer">js,ts,cs,lua</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">title:</span>
+                                <span class="answer">title</span>
+                              </div>
+                              <div class="option">
+                                <span class="filter">keywords:</span>
+                                <span class="answer">keywords</span>
+                              </div>
+                            </div>
+                            <div class="navbar-toggler search desktop-hide"></div>
+                          </div>
                       </div>
+                      <div class="navbar-toggler searchblip desktop-hide"></div>
                     </div>
 
                 <div class="content-region" role="main">
@@ -99,18 +121,18 @@
 
                             
                             <div id="search-results">
-                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="search-list"> <span></span></div>
                               <div class="sr-items">
                                 <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
                               </div>
-                              <ul id="pagination" data-first="" data-prev="❮" data-next="❯" data-last=""></ul>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="@altmp/altv-types.alt-client.Vehicle">
                                 <span class="small pull-right article mobile-hide" style="margin: 0;">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L758">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L772">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -200,7 +222,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_gear.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.gear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L763">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L777">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_gear" data-uid="@altmp/altv-types.alt-client.Vehicle.gear">gear
   <span class="release-stage public"></span>
@@ -234,7 +256,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_handling.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.handling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L768">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L782">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_handling" data-uid="@altmp/altv-types.alt-client.Vehicle.handling">handling
   <span class="release-stage public"></span>
@@ -268,7 +290,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_rpm.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.rpm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L775">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L789">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_rpm" data-uid="@altmp/altv-types.alt-client.Vehicle.rpm">rpm
   <span class="release-stage public"></span>
@@ -302,7 +324,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_speed.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.speed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L780">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L794">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_speed" data-uid="@altmp/altv-types.alt-client.Vehicle.speed">speed
   <span class="release-stage public"></span>
@@ -336,7 +358,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_speedVector.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.speedVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L785">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L799">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_speedVector" data-uid="@altmp/altv-types.alt-client.Vehicle.speedVector">speedVector
   <span class="release-stage public"></span>
@@ -370,7 +392,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_wheelsCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.wheelsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L790">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L804">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_wheelsCount" data-uid="@altmp/altv-types.alt-client.Vehicle.wheelsCount">wheelsCount
   <span class="release-stage public"></span>
@@ -404,7 +426,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_all.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.all%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L760">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L774">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_all" data-uid="@altmp/altv-types.alt-client.Vehicle.all">all
   <span class="release-stage public"></span>
@@ -440,7 +462,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1099">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1113">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_getByID" data-uid="@altmp/altv-types.alt-client.Vehicle.getByID">getByID(number)
   <span class="release-stage public"></span>
@@ -496,7 +518,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Vehicle_getByScriptID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Vehicle.getByScriptID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1107">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1121">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Vehicle_getByScriptID" data-uid="@altmp/altv-types.alt-client.Vehicle.getByScriptID">getByScriptID(number)
   <span class="release-stage public"></span>
