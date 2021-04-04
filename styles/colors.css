@@ -90,4 +90,15 @@
     --affix-uref-color-interface: #7da01f;
     --affix-uref-color-class: #4da6ff;
     --affix-uref-color-enum: #cc9900;
+
+    /* Mermaid diagrams */
+    --diagr-primary-color: #1f2020;
+    --diagr-primary-border-color: #448bca;
+    --diagr-primary-text-color: #ffffff;
+    --diagr-secondary-color: #637777;
+    --diagr-secondary-border-color: #7fdbca;
+    --diagr-secondary-text-color: #ffffff;
+    --diagr-tertiary-color: #0c1c2a;
+    --diagr-tertiary-border-color: #193a58;
+    --diagr-line-color: lightgray;
 }
