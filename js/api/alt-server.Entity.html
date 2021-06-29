@@ -15,7 +15,8 @@
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/colors.css">
     <link rel="stylesheet" href="../../styles/discord.css">
@@ -69,7 +70,7 @@
 
                     
                     <div class="subnav navbar navbar-default">
-                      <button class="btn-link back desktop-hide"></button>
+                      <button class="btn-link search-back desktop-hide"></button>
                       <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -78,7 +79,7 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <div style="position: relative;">
+                          <div style="position: relative; margin: 0 8px;">
                             <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
                               <button class="btn-link clear" id="search-query-clear"></button>
                               <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
@@ -89,10 +90,10 @@
                                 Search options:
                               </span>
                             </div>
-                            <button class="btn-link search desktop-hide"></button>
+                            <button class="btn-link search-tip desktop-hide"></button>
                           </div>
                       </div>
-                      <button class="btn-link searchblip desktop-hide"></button>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
                     </div>
 
                 <div class="content-region" role="main">
@@ -121,7 +122,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L674">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L439">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -146,6 +147,9 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="alt-server.BaseObject.html#_altmp_altv_types_alt_server_BaseObject_constructor">BaseObject()</a>
+    </div>
     <div>
       <a class="xref" href="alt-server.WorldObject.html#_altmp_altv_types_alt_server_WorldObject_dimension">dimension</a>
     </div>
@@ -187,7 +191,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_id.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L680">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L459">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_id" data-uid="@altmp/altv-types.alt-server.Entity.id">id
   <span class="release-stage public"></span>
@@ -221,7 +225,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_model.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L698">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L477">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_model" data-uid="@altmp/altv-types.alt-server.Entity.model">model
   <span class="release-stage public"></span>
@@ -233,7 +237,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public model: number | string</code></pre>
+    <pre><code class="lang-typeScript hljs">public model: string | number</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -245,7 +249,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">number | string</span></td>
+        <td><span class="xref">string | number</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -258,7 +262,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_netOwner.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.netOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L691">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L470">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_netOwner" data-uid="@altmp/altv-types.alt-server.Entity.netOwner">netOwner
   <span class="release-stage public"></span>
@@ -270,7 +274,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public readonly netOwner: Player | null</code></pre>
+    <pre><code class="lang-typeScript hljs">public readonly netOwner: Object | Player</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,7 +286,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="alt-server.Player.html#_altmp_altv_types_alt_server_Player">Player</a> | null</td>
+        <td>Object | <a class="xref" href="alt-server.Player.html#_altmp_altv_types_alt_server_Player">Player</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -299,7 +303,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_rot.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.rot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L705">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L484">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_rot" data-uid="@altmp/altv-types.alt-server.Entity.rot">rot
   <span class="release-stage public"></span>
@@ -336,7 +340,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_visible.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.visible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L710">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L489">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_visible" data-uid="@altmp/altv-types.alt-server.Entity.visible">visible
   <span class="release-stage public"></span>
@@ -370,18 +374,19 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_all.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.all%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L675">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L454">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_all" data-uid="@altmp/altv-types.alt-server.Entity.all">all
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Array with all entities.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public readonly static all: Array&lt;Entity&gt;</code></pre>
+    <pre><code class="lang-typeScript hljs">public readonly static all: Entity[]</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -393,19 +398,124 @@ Disabling migration range will stop this process from happening until turned on 
     </thead>
     <tbody>
       <tr>
-        <td>Array&lt;<a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a>&gt;</td>
+        <td><a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a>[]</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Entity_all_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This creates a clone of the array everytime it is called.
+It is advised to call this once and store the result in a variable, before iterating over it.</p>
+</div>
+  <h5 id="_altmp_altv_types_alt_server_Entity_all_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const entities = alt.Entity.all; // Store it in a variable, so it doesn't create a copy of the array on each iteration
+for(let i = 0; i &lt; entities.length; i++)
+{
+  alt.log(`${entities[i].id}`); // Logs the id of every entity
+}
+</code></pre>
+
   <h3 id="methods">Methods
   </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_attachTo.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.attachTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L603">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_attachTo" data-uid="@altmp/altv-types.alt-server.Entity.attachTo">attachTo(Entity, number, number, Vector3, Vector3, boolean, boolean)
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Attaches this entity to another entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public attachTo(entity: Entity, entityBoneId: number, ownBoneId: number, pos: Vector3, rot: Vector3, enableCollisions: boolean, fixedRotation: boolean): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a></td>
+        <td><em>entity</em></td>
+        <td>
+          <p>Target entity.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>entityBoneId</em></td>
+        <td>
+          <p>Target bone id.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>ownBoneId</em></td>
+        <td>
+          <p>Origin bone id.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3">Vector3</a></td>
+        <td><em>pos</em></td>
+        <td>
+          <p>Position offset.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-server.Vector3.html#_altmp_altv_types_alt_server_Vector3">Vector3</a></td>
+        <td><em>rot</em></td>
+        <td>
+          <p>Rotation.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><em>enableCollisions</em></td>
+        <td>
+          <p>If true the attached entity has a collision.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><em>fixedRotation</em></td>
+        <td>
+          <p>If true the entity is attached with a fixed rotation (no bouncing).</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_deleteStreamSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.deleteStreamSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L756">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L536">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_deleteStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteStreamSyncedMeta">deleteStreamSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -417,7 +527,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">deleteStreamSyncedMeta(key: string): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public deleteStreamSyncedMeta(key: string): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -445,7 +555,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_deleteSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.deleteSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L725">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L504">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_deleteSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.deleteSyncedMeta">deleteSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -457,7 +567,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">deleteSyncedMeta(key: string): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public deleteSyncedMeta(key: string): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -482,10 +592,28 @@ Disabling migration range will stop this process from happening until turned on 
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_detach.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.detach%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L610">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Entity_detach" data-uid="@altmp/altv-types.alt-server.Entity.detach">detach()
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Detaches this entity if attached to another entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public detach(): void</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_getStreamSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.getStreamSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L764">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L544">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getStreamSyncedMeta">getStreamSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -497,7 +625,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">getStreamSyncedMeta(key: string): any</code></pre>
+    <pre><code class="lang-typeScript hljs">public getStreamSyncedMeta(key: string): any</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -541,7 +669,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_getSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.getSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L733">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L512">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.getSyncedMeta">getSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -553,7 +681,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">getSyncedMeta(key: string): any</code></pre>
+    <pre><code class="lang-typeScript hljs">public getSyncedMeta(key: string): any</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -597,7 +725,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_hasStreamSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.hasStreamSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L772">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L552">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_hasStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasStreamSyncedMeta">hasStreamSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -609,7 +737,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">hasStreamSyncedMeta(key: string): boolean</code></pre>
+    <pre><code class="lang-typeScript hljs">public hasStreamSyncedMeta(key: string): boolean</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -653,7 +781,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_hasSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.hasSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L741">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L520">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_hasSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.hasSyncedMeta">hasSyncedMeta(string)
   <span class="release-stage public"></span>
@@ -665,7 +793,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">hasSyncedMeta(key: string): boolean</code></pre>
+    <pre><code class="lang-typeScript hljs">public hasSyncedMeta(key: string): boolean</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -709,7 +837,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_resetNetOwner.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.resetNetOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L809">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L588">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_resetNetOwner" data-uid="@altmp/altv-types.alt-server.Entity.resetNetOwner">resetNetOwner(boolean)
   <span class="release-stage public"></span>
@@ -721,7 +849,7 @@ Disabling migration range will stop this process from happening until turned on 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">resetNetOwner(disableMigration?: boolean): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public resetNetOwner(disableMigration?: boolean): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -737,8 +865,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">boolean</span></td>
         <td><em>disableMigration</em></td>
         <td>
-          <p>Pass true to disable migration, false to keep it enabled.
-If not specified, it defaults to &quot;false&quot;.</p>
+          <p>Pass true to disable migration, false to keep it enabled. If not specified, it defaults to &quot;false&quot;.</p>
 
           
         </td>
@@ -757,7 +884,7 @@ the network owner gets out of the streaming range.
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_setNetOwner.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.setNetOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L795">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L575">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setNetOwner" data-uid="@altmp/altv-types.alt-server.Entity.setNetOwner">setNetOwner(Player, boolean)
   <span class="release-stage public"></span>
@@ -769,7 +896,7 @@ the network owner gets out of the streaming range.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">setNetOwner(player: Player, disableMigration?: boolean): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public setNetOwner(player: Player, disableMigration?: boolean): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -794,8 +921,7 @@ the network owner gets out of the streaming range.
         <td><span class="xref">boolean</span></td>
         <td><em>disableMigration</em></td>
         <td>
-          <p>Pass true to disable migration, false to keep it enabled.
-If not specified, it defaults to &quot;false&quot;.</p>
+          <p>Pass true to disable migration, false to keep it enabled. If not specified, it defaults to &quot;false&quot;.</p>
 
           
         </td>
@@ -814,7 +940,7 @@ the network owner gets out of the streaming range.
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.setStreamSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L780">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L561">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setStreamSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setStreamSyncedMeta">setStreamSyncedMeta(string, any)
   <span class="release-stage public"></span>
@@ -826,7 +952,7 @@ the network owner gets out of the streaming range.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">setStreamSyncedMeta(key: string, value: any): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public setStreamSyncedMeta(key: string, value: any): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -865,7 +991,7 @@ the network owner gets out of the streaming range.
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_setSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.setSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L749">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L529">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_setSyncedMeta" data-uid="@altmp/altv-types.alt-server.Entity.setSyncedMeta">setSyncedMeta(string, any)
   <span class="release-stage public"></span>
@@ -877,7 +1003,7 @@ the network owner gets out of the streaming range.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">setSyncedMeta(key: string, value: any): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public setSyncedMeta(key: string, value: any): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -916,7 +1042,7 @@ the network owner gets out of the streaming range.
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Entity_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Entity.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L718">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L497">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Entity_getByID" data-uid="@altmp/altv-types.alt-server.Entity.getByID">getByID(number)
   <span class="release-stage public"></span>
@@ -928,7 +1054,7 @@ the network owner gets out of the streaming range.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">static getByID(id: number): Entity | null</code></pre>
+    <pre><code class="lang-typeScript hljs">public static getByID(id: number): Object | Entity</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -961,7 +1087,7 @@ the network owner gets out of the streaming range.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a> | null</td>
+        <td>Object | <a class="xref" href="alt-server.Entity.html#_altmp_altv_types_alt_server_Entity">Entity</a></td>
         <td><p>Entity if it was found, otherwise null.</p>
 </td>
       </tr>
@@ -982,7 +1108,7 @@ the network owner gets out of the streaming range.
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js" integrity="sha512-8DnqlIcZT5O7kn55WxWs0PnFyhwCqVEnsDpyHqcadSNtP0eqae406JmIoo2cXT5A42jnlcCw013sdkmK3mEJcQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js" integrity="sha512-zol3kFQ5tnYhL7PzGt0LnllHHVWRGt2bTCIywDiScVvLIlaDOVJ6sPdJTVi0m3rA660RT+yZxkkRzMbb1L8Zkw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>

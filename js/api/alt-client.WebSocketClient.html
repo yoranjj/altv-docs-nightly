@@ -15,7 +15,8 @@
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/colors.css">
     <link rel="stylesheet" href="../../styles/discord.css">
@@ -69,7 +70,7 @@
 
                     
                     <div class="subnav navbar navbar-default">
-                      <button class="btn-link back desktop-hide"></button>
+                      <button class="btn-link search-back desktop-hide"></button>
                       <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -78,7 +79,7 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <div style="position: relative;">
+                          <div style="position: relative; margin: 0 8px;">
                             <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
                               <button class="btn-link clear" id="search-query-clear"></button>
                               <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
@@ -89,10 +90,10 @@
                                 Search options:
                               </span>
                             </div>
-                            <button class="btn-link search desktop-hide"></button>
+                            <button class="btn-link search-tip desktop-hide"></button>
                           </div>
                       </div>
-                      <button class="btn-link searchblip desktop-hide"></button>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
                     </div>
 
                 <div class="content-region" role="main">
@@ -121,7 +122,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2017">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1866">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -132,6 +133,7 @@
   
   
   <h1 id="_altmp_altv_types_alt_client_WebSocketClient" data-uid="@altmp/altv-types.alt-client.WebSocketClient">Class WebSocketClient
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h1>
   <div class="markdown level0 summary"></div>
@@ -173,21 +175,17 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2026">View Source</a>
-  </span>
+  
+  
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_constructor" data-uid="@altmp/altv-types.alt-client.WebSocketClient.constructor">WebSocketClient(string)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public WebSocketClient(url: string): WebSocketClient</code></pre>
+    <pre><code class="lang-typeScript hljs">WebSocketClient(url: string): WebSocketClient</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -216,9 +214,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_autoReconnect.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.autoReconnect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2018">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1867">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_autoReconnect" data-uid="@altmp/altv-types.alt-client.WebSocketClient.autoReconnect">autoReconnect
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
@@ -247,9 +246,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_perMessageDeflate.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.perMessageDeflate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2020">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1869">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_perMessageDeflate" data-uid="@altmp/altv-types.alt-client.WebSocketClient.perMessageDeflate">perMessageDeflate
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
@@ -278,9 +278,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_pingInterval.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.pingInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2022">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1871">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_pingInterval" data-uid="@altmp/altv-types.alt-client.WebSocketClient.pingInterval">pingInterval
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
@@ -309,9 +310,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_readyState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.readyState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2026">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1875">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_readyState" data-uid="@altmp/altv-types.alt-client.WebSocketClient.readyState">readyState
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
@@ -340,9 +342,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_url.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.url%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2024">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1873">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_url" data-uid="@altmp/altv-types.alt-client.WebSocketClient.url">url
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
@@ -373,9 +376,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_addSubProtocol.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.addSubProtocol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2063">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1912">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_addSubProtocol" data-uid="@altmp/altv-types.alt-client.WebSocketClient.addSubProtocol">addSubProtocol(string)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"><p>Adds a sub protocol to the websocket.</p>
@@ -383,7 +387,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">addSubProtocol(protocol: string): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public addSubProtocol(protocol: string): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -408,12 +412,68 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_getEventListeners.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.getEventListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1935">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_WebSocketClient_getEventListeners" data-uid="@altmp/altv-types.alt-client.WebSocketClient.getEventListeners">getEventListeners(Object | string)
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Gets all the listeners for the specified websocket event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getEventListeners(eventName: Object | string): Function[]</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Object | string</span></td>
+        <td><em>eventName</em></td>
+        <td>
+          <p>Name of the event.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Function[]</span></td>
+        <td><p>Array of listener functions for that event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_getSubProtocols.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.getSubProtocols%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2068">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1917">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_getSubProtocols" data-uid="@altmp/altv-types.alt-client.WebSocketClient.getSubProtocols">getSubProtocols()
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"><p>Gets all added sub protocols.</p>
@@ -421,7 +481,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">getSubProtocols(): string[]</code></pre>
+    <pre><code class="lang-typeScript hljs">public getSubProtocols(): string[]</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -443,16 +503,17 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_off.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.off%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2038">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1887">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_off" data-uid="@altmp/altv-types.alt-client.WebSocketClient.off">off(string, (...args: any[]) =&gt; void)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">off(eventName: string, listener: (...args: any[]) =&gt; void): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public off(eventName: string, listener: (...args: any[]) =&gt; void): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -487,16 +548,17 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_on.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.on%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2030">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1879">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_on" data-uid="@altmp/altv-types.alt-client.WebSocketClient.on">on(&quot;open&quot;, () =&gt; void)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">on(eventName: &quot;open&quot;, listener: () =&gt; void): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public on(eventName: &quot;open&quot;, listener: () =&gt; void): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -531,16 +593,17 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_on_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.on_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2030">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1879">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_on_1" data-uid="@altmp/altv-types.alt-client.WebSocketClient.on_1">on(&quot;close&quot;, (code: number, reason: string) =&gt; void)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">on(eventName: &quot;close&quot;, listener: (code: number, reason: string) =&gt; void): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public on(eventName: &quot;close&quot;, listener: (code: number, reason: string) =&gt; void): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -575,16 +638,17 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_on_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.on_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2030">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1879">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_on_2" data-uid="@altmp/altv-types.alt-client.WebSocketClient.on_2">on(&quot;message&quot;, (message: string) =&gt; void)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">on(eventName: &quot;message&quot;, listener: (message: string) =&gt; void): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public on(eventName: &quot;message&quot;, listener: (message: string) =&gt; void): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -619,16 +683,17 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_on_3.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.on_3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2030">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1879">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_on_3" data-uid="@altmp/altv-types.alt-client.WebSocketClient.on_3">on(&quot;error&quot;, (error: string) =&gt; void)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">on(eventName: &quot;error&quot;, listener: (error: string) =&gt; void): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public on(eventName: &quot;error&quot;, listener: (error: string) =&gt; void): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -663,9 +728,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_send.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.send%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2056">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1905">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_send" data-uid="@altmp/altv-types.alt-client.WebSocketClient.send">send(string | ArrayBuffer | ArrayBufferView)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"><p>Sends the specified message to the websocket server.</p>
@@ -673,7 +739,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">send(message: string | ArrayBuffer | ArrayBufferView): boolean</code></pre>
+    <pre><code class="lang-typeScript hljs">public send(message: string | ArrayBuffer | ArrayBufferView): boolean</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -717,9 +783,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_setExtraHeader.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.setExtraHeader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2076">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1925">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_setExtraHeader" data-uid="@altmp/altv-types.alt-client.WebSocketClient.setExtraHeader">setExtraHeader(string, string)
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"><p>Sets the specified header to the specified value.</p>
@@ -727,7 +794,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">setExtraHeader(header: string, value: string): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public setExtraHeader(header: string, value: string): void</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -764,9 +831,10 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_start.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2043">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1892">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_start" data-uid="@altmp/altv-types.alt-client.WebSocketClient.start">start()
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"><p>Starts the websocket connection.</p>
@@ -774,16 +842,17 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">start(): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public start(): void</code></pre>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_WebSocketClient_stop.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.WebSocketClient.stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2048">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1897">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_WebSocketClient_stop" data-uid="@altmp/altv-types.alt-client.WebSocketClient.stop">stop()
+  <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
   <div class="markdown level1 summary"><p>Stops the websocket connection.</p>
@@ -791,7 +860,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">stop(): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public stop(): void</code></pre>
   </div>
 </article>
                     </div>
@@ -808,7 +877,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js" integrity="sha512-8DnqlIcZT5O7kn55WxWs0PnFyhwCqVEnsDpyHqcadSNtP0eqae406JmIoo2cXT5A42jnlcCw013sdkmK3mEJcQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js" integrity="sha512-zol3kFQ5tnYhL7PzGt0LnllHHVWRGt2bTCIywDiScVvLIlaDOVJ6sPdJTVi0m3rA660RT+yZxkkRzMbb1L8Zkw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>

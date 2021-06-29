@@ -15,7 +15,8 @@
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/night-owl.min.css" integrity="sha512-xYwrX34LRktCfb+3WW0FtJf6qEc2tcJet152No8epFPBoM4qNaaVk5xdfCYI0Ns0H2jD0Isc3VoShSMv6zzpPA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../../styles/colors.css">
     <link rel="stylesheet" href="../../styles/discord.css">
@@ -69,7 +70,7 @@
 
                     
                     <div class="subnav navbar navbar-default">
-                      <button class="btn-link back desktop-hide"></button>
+                      <button class="btn-link search-back desktop-hide"></button>
                       <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
                       <div class="container" id="breadcrumb">
                         <ul class="breadcrumb">
@@ -78,7 +79,7 @@
                       </div>
                       <div class="flex-space"></div>
                       <div class="toolbar">
-                          <div style="position: relative;">
+                          <div style="position: relative; margin: 0 8px;">
                             <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
                               <button class="btn-link clear" id="search-query-clear"></button>
                               <!-- <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off"> -->
@@ -89,10 +90,10 @@
                                 Search options:
                               </span>
                             </div>
-                            <button class="btn-link search desktop-hide"></button>
+                            <button class="btn-link search-tip desktop-hide"></button>
                           </div>
                       </div>
-                      <button class="btn-link searchblip desktop-hide"></button>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
                     </div>
 
                 <div class="content-region" role="main">
@@ -206,6 +207,8 @@
         <section style="display: none;"></section>
         <h4 style="display: none;"><a class="xref" href="alt-server.ExplosionType.html#_altmp_altv_types_alt_server_ExplosionType">ExplosionType</a></h4>
         <section style="display: none;"></section>
+        <h4 style="display: none;"><a class="xref" href="alt-server.FileEncoding.html#_altmp_altv_types_alt_server_FileEncoding">FileEncoding</a></h4>
+        <section style="display: none;"></section>
         <h4 style="display: none;"><a class="xref" href="alt-server.NumberPlateStyle.html#_altmp_altv_types_alt_server_NumberPlateStyle">NumberPlateStyle</a></h4>
         <section style="display: none;"></section>
         <h4 style="display: none;"><a class="xref" href="alt-server.RadioStation.html#_altmp_altv_types_alt_server_RadioStation">RadioStation</a></h4>
@@ -237,7 +240,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_clearEveryTick.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.clearEveryTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1330">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L369">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_clearEveryTick" data-uid="@altmp/altv-types.alt-server.clearEveryTick">clearEveryTick(number)
         <span class="release-stage public"></span>
@@ -277,7 +280,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_clearInterval.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.clearInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1337">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L376">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_clearInterval" data-uid="@altmp/altv-types.alt-server.clearInterval">clearInterval(number)
         <span class="release-stage public"></span>
@@ -317,7 +320,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_clearNextTick.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.clearNextTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1344">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L383">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_clearNextTick" data-uid="@altmp/altv-types.alt-server.clearNextTick">clearNextTick(number)
         <span class="release-stage public"></span>
@@ -357,7 +360,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_clearTimeout.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.clearTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1351">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L390">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_clearTimeout" data-uid="@altmp/altv-types.alt-server.clearTimeout">clearTimeout(number)
         <span class="release-stage public"></span>
@@ -397,7 +400,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_deleteMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.deleteMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1268">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L321">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_deleteMeta" data-uid="@altmp/altv-types.alt-server.deleteMeta">deleteMeta(string)
         <span class="release-stage public"></span>
@@ -434,57 +437,17 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
-          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_deleteSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.deleteSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-        </span>
-        <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1299">View Source</a>
-        </span>
-        <h4 id="_altmp_altv_types_alt_server_deleteSyncedMeta" data-uid="@altmp/altv-types.alt-server.deleteSyncedMeta">deleteSyncedMeta(string)
-        <span class="release-stage public"></span>
-        <span class="release-stage beta"></span>
-        <span class="release-stage alpha"></span>
-  </h4>
-        <div class="markdown level1 summary"><p>Removes the specified key.</p>
-</div>
-        <div class="markdown level1 conceptual"></div>
-        <h5 class="decalaration">Declaration</h5>
-        <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">deleteSyncedMeta(key: string): void</code></pre>
-        </div>
-        <h5 class="parameters">Parameters</h5>
-        <table class="table table-bordered table-striped table-condensed">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Name</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="xref">string</span></td>
-              <td><em>key</em></td>
-              <td>
-                <p>The key of the value to remove.</p>
-
-                
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <span class="small pull-right mobile-hide">
-          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_emit.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.emit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1365">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L403">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_emit" data-uid="@altmp/altv-types.alt-server.emit">emit(string, any[])
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Emits specified event across server resources.</p>
+        <div class="markdown level1 summary"><p>Emits specified event across resources.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -526,9 +489,10 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_emitAllClients.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.emitAllClients%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1393">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1137">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_emitAllClients" data-uid="@altmp/altv-types.alt-server.emitAllClients">emitAllClients(string, any[])
+        <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
         <div class="markdown level1 summary"><p>Emits specified event to all clients.</p>
@@ -573,7 +537,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_emitClient.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.emitClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1374">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1107">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_emitClient" data-uid="@altmp/altv-types.alt-server.emitClient">emitClient(Player, string, any[])
         <span class="release-stage public"></span>
@@ -631,9 +595,9 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_emitClient_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.emitClient_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1374">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1107">View Source</a>
         </span>
-        <h4 id="_altmp_altv_types_alt_server_emitClient_1" data-uid="@altmp/altv-types.alt-server.emitClient_1">emitClient(null, string, any[])
+        <h4 id="_altmp_altv_types_alt_server_emitClient_1" data-uid="@altmp/altv-types.alt-server.emitClient_1">emitClient(Object, string, any[])
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
@@ -643,7 +607,7 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">emitClient(player: null, eventName: string, ...args: any[]): void</code></pre>
+          <pre><code class="lang-typeScript hljs">emitClient(player: Object, eventName: string, ...args: any[]): void</code></pre>
         </div>
         <h5 class="parameters">Parameters</h5>
         <table class="table table-bordered table-striped table-condensed">
@@ -656,7 +620,7 @@
           </thead>
           <tbody>
             <tr>
-              <td><span class="xref">null</span></td>
+              <td><span class="xref">Object</span></td>
               <td><em>player</em></td>
               <td>
                 <p>Event is sent to every player.</p>
@@ -686,17 +650,74 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_emitClient_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.emitClient_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1107">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_server_emitClient_2" data-uid="@altmp/altv-types.alt-server.emitClient_2">emitClient(Player[], string, any[])
+        <span class="release-stage beta"></span>
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Emits specified event to specific clients.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">emitClient(player: Player[], eventName: string, ...args: any[]): void</code></pre>
+        </div>
+        <h5 class="parameters">Parameters</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a class="xref" href="alt-server.Player.html#_altmp_altv_types_alt_server_Player">Player</a>[]</td>
+              <td><em>player</em></td>
+              <td>
+                <p>Event is sent to every player in array.</p>
+
+                
+              </td>
+            </tr>
+            <tr>
+              <td><span class="xref">string</span></td>
+              <td><em>eventName</em></td>
+              <td>
+                <p>Name of the event.</p>
+
+                
+              </td>
+            </tr>
+            <tr>
+              <td><span class="xref">any[]</span></td>
+              <td><em>args</em></td>
+              <td>
+                <p>Rest parameters for emit to send.</p>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <span class="small pull-right mobile-hide">
+          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_everyTick.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.everyTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1410">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L411">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_everyTick" data-uid="@altmp/altv-types.alt-server.everyTick">everyTick((...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Schedules execution of handler on every tick.</p>
+        <div class="markdown level1 summary"><p>Schedules execution of handler on every tick/every frame.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -742,10 +763,65 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getEventListeners.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getEventListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1267">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_server_getEventListeners" data-uid="@altmp/altv-types.alt-server.getEventListeners">getEventListeners(string | Object)
+        <span class="release-stage beta"></span>
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Gets all the listeners for the specified local event.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">getEventListeners(eventName: string | Object): Function[]</code></pre>
+        </div>
+        <h5 class="parameters">Parameters</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">string | Object</span></td>
+              <td><em>eventName</em></td>
+              <td>
+                <p>Name of the event or null for generic event.</p>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 class="returns">Returns</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">Function[]</span></td>
+              <td><p>Array of listener functions for that event.</p>
+</td>
+            </tr>
+          </tbody>
+        </table>
+        <span class="small pull-right mobile-hide">
+          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1276">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L329">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_getMeta" data-uid="@altmp/altv-types.alt-server.getMeta">getMeta(string)
         <span class="release-stage public"></span>
@@ -801,7 +877,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getNetTime.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getNetTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1415">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1151">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_getNetTime" data-uid="@altmp/altv-types.alt-server.getNetTime">getNetTime()
         <span class="release-stage public"></span>
@@ -832,10 +908,65 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getRemoteEventListeners.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getRemoteEventListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1277">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_server_getRemoteEventListeners" data-uid="@altmp/altv-types.alt-server.getRemoteEventListeners">getRemoteEventListeners(string | Object)
+        <span class="release-stage beta"></span>
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Gets all the listeners for the specified remote event.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">getRemoteEventListeners(eventName: string | Object): Function[]</code></pre>
+        </div>
+        <h5 class="parameters">Parameters</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">string | Object</span></td>
+              <td><em>eventName</em></td>
+              <td>
+                <p>Name of the event or null for generic event.</p>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 class="returns">Returns</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">Function[]</span></td>
+              <td><p>Array of listener functions for that event.</p>
+</td>
+            </tr>
+          </tbody>
+        </table>
+        <span class="small pull-right mobile-hide">
+          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getResourceExports.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getResourceExports%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1422">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1158">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_getResourceExports" data-uid="@altmp/altv-types.alt-server.getResourceExports">getResourceExports(string)
         <span class="release-stage public"></span>
@@ -890,7 +1021,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getResourceMain.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getResourceMain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1429">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1165">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_getResourceMain" data-uid="@altmp/altv-types.alt-server.getResourceMain">getResourceMain(string)
         <span class="release-stage public"></span>
@@ -945,7 +1076,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getResourcePath.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getResourcePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1436">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1172">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_getResourcePath" data-uid="@altmp/altv-types.alt-server.getResourcePath">getResourcePath(string)
         <span class="release-stage public"></span>
@@ -1000,7 +1131,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_getSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.getSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1307">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L354">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_getSyncedMeta" data-uid="@altmp/altv-types.alt-server.getSyncedMeta">getSyncedMeta(string)
         <span class="release-stage public"></span>
@@ -1056,7 +1187,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_hasMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.hasMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1284">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L337">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_hasMeta" data-uid="@altmp/altv-types.alt-server.hasMeta">hasMeta(string)
         <span class="release-stage public"></span>
@@ -1112,10 +1243,9 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_hasResource.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.hasResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1443">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L427">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_hasResource" data-uid="@altmp/altv-types.alt-server.hasResource">hasResource(string)
-        <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
@@ -1167,7 +1297,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_hasSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.hasSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1315">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L362">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_hasSyncedMeta" data-uid="@altmp/altv-types.alt-server.hasSyncedMeta">hasSyncedMeta(string)
         <span class="release-stage public"></span>
@@ -1223,7 +1353,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_hash.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.hash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1450">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L418">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_hash" data-uid="@altmp/altv-types.alt-server.hash">hash(string)
         <span class="release-stage public"></span>
@@ -1251,7 +1381,7 @@
               <td><span class="xref">string</span></td>
               <td><em>str</em></td>
               <td>
-                <p>A string, from which hash will be created.</p>
+                <p>A string from which hash will be created.</p>
 
                 
               </td>
@@ -1278,7 +1408,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_log.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1455">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L432">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_log" data-uid="@altmp/altv-types.alt-server.log">log(any[])
         <span class="release-stage public"></span>
@@ -1317,7 +1447,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_logError.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.logError%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1460">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L437">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_logError" data-uid="@altmp/altv-types.alt-server.logError">logError(any[])
         <span class="release-stage public"></span>
@@ -1356,7 +1486,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_logWarning.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.logWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1465">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L442">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_logWarning" data-uid="@altmp/altv-types.alt-server.logWarning">logWarning(any[])
         <span class="release-stage public"></span>
@@ -1395,14 +1525,14 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_nextTick.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.nextTick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1473">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L450">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_nextTick" data-uid="@altmp/altv-types.alt-server.nextTick">nextTick((...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Schedules execution of handler on next tick.</p>
+        <div class="markdown level1 summary"><p>Schedules execution of handler on next tick/next frame.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -1451,14 +1581,14 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_off.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.off%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1482">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L460">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_off" data-uid="@altmp/altv-types.alt-server.off">off(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Unsubscribes from server event with specified listener.</p>
+        <div class="markdown level1 summary"><p>Unsubscribes from a event with the specified listener.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -1496,21 +1626,21 @@
           </tbody>
         </table>
         <h5 id="_altmp_altv_types_alt_server_off_remarks">Remarks</h5>
-        <div class="markdown level1 remarks"><p>Listener should be of the same reference as when event was subscribed.</p>
+        <div class="markdown level1 remarks"><p>Listener should be of the same reference as when event was subscribed to.</p>
 </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_offClient.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.offClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1491">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1182">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_offClient" data-uid="@altmp/altv-types.alt-server.offClient">offClient(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Unsubscribes from client event with specified listener.</p>
+        <div class="markdown level1 summary"><p>Unsubscribes from a client event with the specified listener.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -1548,26 +1678,26 @@
           </tbody>
         </table>
         <h5 id="_altmp_altv_types_alt_server_offClient_remarks">Remarks</h5>
-        <div class="markdown level1 remarks"><p>Listener should be of the same reference as when event was subscribed.</p>
+        <div class="markdown level1 remarks"><p>Listener should be of the same reference as when event was subscribed to.</p>
 </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_on.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.on%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1499">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1190">View Source</a>
         </span>
-        <h4 id="_altmp_altv_types_alt_server_on" data-uid="@altmp/altv-types.alt-server.on">on&lt;K extends keyof IServerEvent&gt;(K, IServerEvent[K])
+        <h4 id="_altmp_altv_types_alt_server_on" data-uid="@altmp/altv-types.alt-server.on">on&lt;K extends string | number&gt;(K, IServerEvent[K])
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Subscribes to server event with specified listener.</p>
+        <div class="markdown level1 summary"><p>Subscribes to a server event with the specified listener.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">on&lt;K extends keyof IServerEvent&gt;(eventName: K, listener: IServerEvent[K]): void</code></pre>
+          <pre><code class="lang-typeScript hljs">on&lt;K extends string | number&gt;(eventName: K, listener: IServerEvent[K]): void</code></pre>
         </div>
         <h5 class="parameters">Parameters</h5>
         <table class="table table-bordered table-striped table-condensed">
@@ -1601,65 +1731,17 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
-          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_on_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.on_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-        </span>
-        <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1499">View Source</a>
-        </span>
-        <h4 id="_altmp_altv_types_alt_server_on_1" data-uid="@altmp/altv-types.alt-server.on_1">on&lt;S extends string&gt;(Exclude&lt;S, keyof IServerEvent&gt;, (...args: any[]) =&gt; boolean | void | Promise&lt;boolean | void&gt;)
-        <span class="release-stage public"></span>
-        <span class="release-stage beta"></span>
-        <span class="release-stage alpha"></span>
-  </h4>
-        <div class="markdown level1 summary"><p>Subscribes to server event with specified listener.</p>
-</div>
-        <div class="markdown level1 conceptual"></div>
-        <h5 class="decalaration">Declaration</h5>
-        <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">on&lt;S extends string&gt;(event: Exclude&lt;S, keyof IServerEvent&gt;, listener: (...args: any[]) =&gt; boolean | void | Promise&lt;boolean | void&gt;): void</code></pre>
-        </div>
-        <h5 class="parameters">Parameters</h5>
-        <table class="table table-bordered table-striped table-condensed">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Name</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Exclude&lt;S, keyof <a class="xref" href="alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent">IServerEvent</a>&gt;</td>
-              <td><em>event</em></td>
-              <td>
-                
-                
-              </td>
-            </tr>
-            <tr>
-              <td><span class="xref">(...args: any[]) =&gt; boolean | void | Promise&lt;boolean | void&gt;</span></td>
-              <td><em>listener</em></td>
-              <td>
-                <p>Listener that should be added.</p>
-
-                
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <span class="small pull-right mobile-hide">
-          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_onClient.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.onClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1531">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1206">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_onClient" data-uid="@altmp/altv-types.alt-server.onClient">onClient(string, (player: Player, ...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Subscribes to client event with specified listener.</p>
+        <div class="markdown level1 summary"><p>Subscribes to a client event with the specified listener.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -1698,22 +1780,64 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
-          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_once.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.once%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_onClient_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.onClient_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1507">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1206">View Source</a>
         </span>
-        <h4 id="_altmp_altv_types_alt_server_once" data-uid="@altmp/altv-types.alt-server.once">once&lt;K extends keyof IServerEvent&gt;(K, IServerEvent[K])
-        <span class="release-stage public"></span>
+        <h4 id="_altmp_altv_types_alt_server_onClient_1" data-uid="@altmp/altv-types.alt-server.onClient_1">onClient((eventName: string, player: Player, ...args: any[]) =&gt; void)
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Subscribes to server event with specified listener, which only triggers once.</p>
+        <div class="markdown level1 summary"><p>Subscribes to all client events with the specified listener.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">once&lt;K extends keyof IServerEvent&gt;(eventName: K, listener: IServerEvent[K]): void</code></pre>
+          <pre><code class="lang-typeScript hljs">onClient(listener: (eventName: string, player: Player, ...args: any[]) =&gt; void): void</code></pre>
+        </div>
+        <h5 class="parameters">Parameters</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">(eventName: string, player: Player, ...args: any[]) =&gt; void</span></td>
+              <td><em>listener</em></td>
+              <td>
+                <p>Listener that should be added.</p>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 id="_altmp_altv_types_alt_server_onClient_1_remarks">Remarks</h5>
+        <div class="markdown level1 remarks"><p>Listener will be only called for user-created events.</p>
+</div>
+        <span class="small pull-right mobile-hide">
+          <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_once.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.once%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1198">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_server_once" data-uid="@altmp/altv-types.alt-server.once">once&lt;K extends string | number&gt;(K, IServerEvent[K])
+        <span class="release-stage public"></span>
+        <span class="release-stage beta"></span>
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Subscribes to a server event with the specified listener, which only triggers once.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">once&lt;K extends string | number&gt;(eventName: K, listener: IServerEvent[K]): void</code></pre>
         </div>
         <h5 class="parameters">Parameters</h5>
         <table class="table table-bordered table-striped table-condensed">
@@ -1747,65 +1871,17 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
-          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_once_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.once_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-        </span>
-        <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1507">View Source</a>
-        </span>
-        <h4 id="_altmp_altv_types_alt_server_once_1" data-uid="@altmp/altv-types.alt-server.once_1">once&lt;S extends string&gt;(Exclude&lt;S, keyof IServerEvent&gt;, (...args: any[]) =&gt; boolean | void | Promise&lt;boolean | void&gt;)
-        <span class="release-stage public"></span>
-        <span class="release-stage beta"></span>
-        <span class="release-stage alpha"></span>
-  </h4>
-        <div class="markdown level1 summary"><p>Subscribes to server event with specified listener, which only triggers once.</p>
-</div>
-        <div class="markdown level1 conceptual"></div>
-        <h5 class="decalaration">Declaration</h5>
-        <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">once&lt;S extends string&gt;(event: Exclude&lt;S, keyof IServerEvent&gt;, listener: (...args: any[]) =&gt; boolean | void | Promise&lt;boolean | void&gt;): void</code></pre>
-        </div>
-        <h5 class="parameters">Parameters</h5>
-        <table class="table table-bordered table-striped table-condensed">
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Name</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Exclude&lt;S, keyof <a class="xref" href="alt-server.IServerEvent.html#_altmp_altv_types_alt_server_IServerEvent">IServerEvent</a>&gt;</td>
-              <td><em>event</em></td>
-              <td>
-                
-                
-              </td>
-            </tr>
-            <tr>
-              <td><span class="xref">(...args: any[]) =&gt; boolean | void | Promise&lt;boolean | void&gt;</span></td>
-              <td><em>listener</em></td>
-              <td>
-                <p>Listener that should be added.</p>
-
-                
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <span class="small pull-right mobile-hide">
-          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_onceClient.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.onceClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1539">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1225">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_onceClient" data-uid="@altmp/altv-types.alt-server.onceClient">onceClient(string, (player: Player, ...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Subscribes to client event with specified listener, which only triggers once.</p>
+        <div class="markdown level1 summary"><p>Subscribes to a client event with the specified listener, which only triggers once.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
@@ -1844,10 +1920,52 @@
         </table>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_onceClient_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.onceClient_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1225">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_server_onceClient_1" data-uid="@altmp/altv-types.alt-server.onceClient_1">onceClient((eventName: string, player: Player, ...args: any[]) =&gt; void)
+        <span class="release-stage beta"></span>
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Subscribes to all client events with the specified listener, which only triggers once.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">onceClient(listener: (eventName: string, player: Player, ...args: any[]) =&gt; void): void</code></pre>
+        </div>
+        <h5 class="parameters">Parameters</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">(eventName: string, player: Player, ...args: any[]) =&gt; void</span></td>
+              <td><em>listener</em></td>
+              <td>
+                <p>Listener that should be added.</p>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 id="_altmp_altv_types_alt_server_onceClient_1_remarks">Remarks</h5>
+        <div class="markdown level1 remarks"><p>Listener will be only called for user-created events.</p>
+</div>
+        <span class="small pull-right mobile-hide">
+          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_restartResource.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.restartResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1571">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1250">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_restartResource" data-uid="@altmp/altv-types.alt-server.restartResource">restartResource(string)
         <span class="release-stage public"></span>
@@ -1887,7 +2005,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_setInterval.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.setInterval%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1548">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L491">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_setInterval" data-uid="@altmp/altv-types.alt-server.setInterval">setInterval((...args: any[]) =&gt; void, number)
         <span class="release-stage public"></span>
@@ -1952,7 +2070,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_setMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.setMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1292">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L346">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_setMeta" data-uid="@altmp/altv-types.alt-server.setMeta">setMeta(string, any)
         <span class="release-stage public"></span>
@@ -2003,9 +2121,10 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_setPassword.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.setPassword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1402">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1146">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_setPassword" data-uid="@altmp/altv-types.alt-server.setPassword">setPassword(string)
+        <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
         <div class="markdown level1 summary"><p>Change the server password at runtime</p>
@@ -2041,7 +2160,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_setSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.setSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1323">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1098">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_setSyncedMeta" data-uid="@altmp/altv-types.alt-server.setSyncedMeta">setSyncedMeta(string, any)
         <span class="release-stage public"></span>
@@ -2092,7 +2211,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_setTimeout.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.setTimeout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1557">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L500">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_setTimeout" data-uid="@altmp/altv-types.alt-server.setTimeout">setTimeout((...args: any[]) =&gt; void, number)
         <span class="release-stage public"></span>
@@ -2157,7 +2276,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_startResource.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.startResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1564">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1243">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_startResource" data-uid="@altmp/altv-types.alt-server.startResource">startResource(string)
         <span class="release-stage public"></span>
@@ -2197,7 +2316,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_stopResource.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.stopResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1578">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L1257">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_stopResource" data-uid="@altmp/altv-types.alt-server.stopResource">stopResource(string)
         <span class="release-stage public"></span>
@@ -2239,26 +2358,44 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_branch.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.branch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L471">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L305">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_branch" data-uid="@altmp/altv-types.alt-server.branch">branch
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Represents the current server branch.</p>
+        <div class="markdown level1 summary"><p>Represents the current branch.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const branch: string</code></pre>
+          <pre><code class="lang-typeScript hljs">const branch: string</code></pre>
+        </div>
+        <span class="small pull-right mobile-hide">
+          <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_debug.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.debug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L314">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_server_debug" data-uid="@altmp/altv-types.alt-server.debug">debug
+        <span class="release-stage beta"></span>
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Returns if the resource is in debug mode.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">const debug: boolean</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_defaultDimension.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.defaultDimension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L449">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L423">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_defaultDimension" data-uid="@altmp/altv-types.alt-server.defaultDimension">defaultDimension
         <span class="release-stage public"></span>
@@ -2269,14 +2406,14 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const defaultDimension: number</code></pre>
+          <pre><code class="lang-typeScript hljs">const defaultDimension: number</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_globalDimension.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.globalDimension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L451">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L425">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_globalDimension" data-uid="@altmp/altv-types.alt-server.globalDimension">globalDimension
         <span class="release-stage public"></span>
@@ -2287,14 +2424,14 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const globalDimension: number</code></pre>
+          <pre><code class="lang-typeScript hljs">const globalDimension: number</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_resourceName.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.resourceName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L442">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L286">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_resourceName" data-uid="@altmp/altv-types.alt-server.resourceName">resourceName
         <span class="release-stage public"></span>
@@ -2306,14 +2443,14 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const resourceName: string</code></pre>
+          <pre><code class="lang-typeScript hljs">const resourceName: string</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_rootDir.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.rootDir%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L447">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L421">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_rootDir" data-uid="@altmp/altv-types.alt-server.rootDir">rootDir
         <span class="release-stage public"></span>
@@ -2325,26 +2462,26 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const rootDir: string</code></pre>
+          <pre><code class="lang-typeScript hljs">const rootDir: string</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_sdkVersion.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.sdkVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L465">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L300">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_sdkVersion" data-uid="@altmp/altv-types.alt-server.sdkVersion">sdkVersion
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Represents the current server SDK version.</p>
+        <div class="markdown level1 summary"><p>Represents the current SDK version.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const sdkVersion: number</code></pre>
+          <pre><code class="lang-typeScript hljs">const sdkVersion: number</code></pre>
         </div>
         <h5 id="_altmp_altv_types_alt_server_sdkVersion_remarks">Remarks</h5>
         <div class="markdown level1 remarks"><p>It's the version of the SDK the current runtime was compiled with.</p>
@@ -2354,19 +2491,19 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_version.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.version%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L458">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./shared/index.d.ts/#L293">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_version" data-uid="@altmp/altv-types.alt-server.version">version
         <span class="release-stage public"></span>
         <span class="release-stage beta"></span>
         <span class="release-stage alpha"></span>
   </h4>
-        <div class="markdown level1 summary"><p>Represents the current server version.</p>
+        <div class="markdown level1 summary"><p>Represents the current version.</p>
 </div>
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">public const version: string</code></pre>
+          <pre><code class="lang-typeScript hljs">const version: string</code></pre>
         </div>
         <h5 id="_altmp_altv_types_alt_server_version_remarks">Remarks</h5>
         <div class="markdown level1 remarks"><p>It's a slighty modified semantic versioning specification, which can be matched using this regular expression pattern <code>^(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))$</code>.</p>
@@ -2378,7 +2515,7 @@
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_DateTimeDay.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.DateTimeDay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L10">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L11">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_DateTimeDay" data-uid="@altmp/altv-types.alt-server.DateTimeDay">DateTimeDay
         <span class="release-stage public"></span>
@@ -2389,14 +2526,14 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">type DateTimeDay = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30</code></pre>
+          <pre><code class="lang-typeScript hljs">type DateTimeDay = Object | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot; | &quot;10&quot; | &quot;11&quot; | &quot;12&quot; | &quot;13&quot; | &quot;14&quot; | &quot;15&quot; | &quot;16&quot; | &quot;17&quot; | &quot;18&quot; | &quot;19&quot; | &quot;20&quot; | &quot;21&quot; | &quot;22&quot; | &quot;23&quot; | &quot;24&quot; | &quot;25&quot; | &quot;26&quot; | &quot;27&quot; | &quot;28&quot; | &quot;29&quot; | &quot;30&quot;</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_DateTimeHour.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.DateTimeHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L8">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_DateTimeHour" data-uid="@altmp/altv-types.alt-server.DateTimeHour">DateTimeHour
         <span class="release-stage public"></span>
@@ -2407,14 +2544,14 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">type DateTimeHour = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23</code></pre>
+          <pre><code class="lang-typeScript hljs">type DateTimeHour = Object | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot; | &quot;10&quot; | &quot;11&quot; | &quot;12&quot; | &quot;13&quot; | &quot;14&quot; | &quot;15&quot; | &quot;16&quot; | &quot;17&quot; | &quot;18&quot; | &quot;19&quot; | &quot;20&quot; | &quot;21&quot; | &quot;22&quot; | &quot;23&quot;</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_DateTimeMinute.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.DateTimeMinute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L4">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L9">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_DateTimeMinute" data-uid="@altmp/altv-types.alt-server.DateTimeMinute">DateTimeMinute
         <span class="release-stage public"></span>
@@ -2425,7 +2562,7 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">type DateTimeMinute = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59</code></pre>
+          <pre><code class="lang-typeScript hljs">type DateTimeMinute = Object | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot; | &quot;10&quot; | &quot;11&quot; | &quot;12&quot; | &quot;13&quot; | &quot;14&quot; | &quot;15&quot; | &quot;16&quot; | &quot;17&quot; | &quot;18&quot; | &quot;19&quot; | &quot;20&quot; | &quot;21&quot; | &quot;22&quot; | &quot;23&quot; | &quot;24&quot; | &quot;25&quot; | &quot;26&quot; | &quot;27&quot; | &quot;28&quot; | &quot;29&quot; | &quot;30&quot; | &quot;31&quot; | &quot;32&quot; | &quot;33&quot; | &quot;34&quot; | &quot;35&quot; | &quot;36&quot; | &quot;37&quot; | &quot;38&quot; | &quot;39&quot; | &quot;40&quot; | &quot;41&quot; | &quot;42&quot; | &quot;43&quot; | &quot;44&quot; | &quot;45&quot; | &quot;46&quot; | &quot;47&quot; | &quot;48&quot; | &quot;49&quot; | &quot;50&quot; | &quot;51&quot; | &quot;52&quot; | &quot;53&quot; | &quot;54&quot; | &quot;55&quot; | &quot;56&quot; | &quot;57&quot; | &quot;58&quot; | &quot;59&quot;</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
@@ -2443,14 +2580,14 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">type DateTimeMonth = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11</code></pre>
+          <pre><code class="lang-typeScript hljs">type DateTimeMonth = Object | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot; | &quot;10&quot; | &quot;11&quot;</code></pre>
         </div>
         <span class="small pull-right mobile-hide">
           <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_DateTimeSecond.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.DateTimeSecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L7">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L10">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_server_DateTimeSecond" data-uid="@altmp/altv-types.alt-server.DateTimeSecond">DateTimeSecond
         <span class="release-stage public"></span>
@@ -2461,7 +2598,7 @@
         <div class="markdown level1 conceptual"></div>
         <h5 class="decalaration">Declaration</h5>
         <div class="codewrapper">
-          <pre><code class="lang-typeScript hljs">type DateTimeSecond = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59</code></pre>
+          <pre><code class="lang-typeScript hljs">type DateTimeSecond = Object | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot; | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot; | &quot;10&quot; | &quot;11&quot; | &quot;12&quot; | &quot;13&quot; | &quot;14&quot; | &quot;15&quot; | &quot;16&quot; | &quot;17&quot; | &quot;18&quot; | &quot;19&quot; | &quot;20&quot; | &quot;21&quot; | &quot;22&quot; | &quot;23&quot; | &quot;24&quot; | &quot;25&quot; | &quot;26&quot; | &quot;27&quot; | &quot;28&quot; | &quot;29&quot; | &quot;30&quot; | &quot;31&quot; | &quot;32&quot; | &quot;33&quot; | &quot;34&quot; | &quot;35&quot; | &quot;36&quot; | &quot;37&quot; | &quot;38&quot; | &quot;39&quot; | &quot;40&quot; | &quot;41&quot; | &quot;42&quot; | &quot;43&quot; | &quot;44&quot; | &quot;45&quot; | &quot;46&quot; | &quot;47&quot; | &quot;48&quot; | &quot;49&quot; | &quot;50&quot; | &quot;51&quot; | &quot;52&quot; | &quot;53&quot; | &quot;54&quot; | &quot;55&quot; | &quot;56&quot; | &quot;57&quot; | &quot;58&quot; | &quot;59&quot;</code></pre>
         </div>
 </article>
                     </div>
@@ -2478,7 +2615,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js" integrity="sha512-8DnqlIcZT5O7kn55WxWs0PnFyhwCqVEnsDpyHqcadSNtP0eqae406JmIoo2cXT5A42jnlcCw013sdkmK3mEJcQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js" integrity="sha512-zol3kFQ5tnYhL7PzGt0LnllHHVWRGt2bTCIywDiScVvLIlaDOVJ6sPdJTVi0m3rA660RT+yZxkkRzMbb1L8Zkw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
