@@ -1,5 +1,5 @@
 /* Color schemes */
-.theme-dark
+:root.theme-dark
 {
     /* General */
     --main-bg-color: #36393f;
@@ -106,7 +106,7 @@
     --diagr-line-color: lightgray;
 }
 
-.theme-light
+:root.theme-light
 {
     /* General */
     --main-bg-color: #fff;
