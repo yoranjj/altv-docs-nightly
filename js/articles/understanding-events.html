@@ -9,7 +9,7 @@
     <title>Events </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Events ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../styles/discord.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -50,12 +50,6 @@
                     </div>
 
 
-                    <div class="sidebar-item-separator"></div>
-
-                        
-                        <div id="sidetoggle">
-                          <div id="sidetoc"></div>
-                        </div>
 
                 </div>
 
@@ -113,7 +107,7 @@
                     <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search">
+                            <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
                               <div class="bs-docs-sidebar affix" id="affix">
                                 <div></div>
@@ -131,7 +125,7 @@
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="">
 
-                                <span class="small pull-right article mobile-hide" style="margin: 0;">
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types//blob/master/docs/articles/understanding-events.md/#L1">Improve this Doc</a>
@@ -142,9 +136,9 @@
 <h1 id="events">Events</h1>
 
 <p>Events work in a very specific way and understanding their communication is very important.</p>
-<p>Server can talk to any client.
-Client may only talk to WebViews and the Server.</p>
-<p>A client <strong>CANNOT</strong> talk to another client.</p>
+<p>The server can communicate with any client.
+Clients may only communicate with WebViews and the server.</p>
+<p>A client <strong>CANNOT</strong> communicate with another client.</p>
 <table>
 <thead>
 <tr>
@@ -162,16 +156,32 @@ Client may only talk to WebViews and the Server.</p>
 <td>Receives an event. Server only receives server events. Client only receives client events.</td>
 </tr>
 <tr>
+<td>alt.off</td>
+<td>Stop listening to custom or built-in events.</td>
+</tr>
+<tr>
 <td>alt.onServer</td>
 <td>Receives an event emitted from the server on client-side. Triggered with <code>alt.emitClient</code>.</td>
 </tr>
 <tr>
+<td>alt.offServer</td>
+<td>Stop listening to custom events from the server.</td>
+</tr>
+<tr>
 <td>alt.emitClient</td>
-<td>Emit an event to a specific client that they receive with <code>alt.onServer</code>.</td>
+<td>Emit an event to a specific client or an array of clients that they receive with <code>alt.onServer</code>.</td>
+</tr>
+<tr>
+<td>alt.emitAllClients</td>
+<td>Emit an event to all clients that they receive with <code>alt.onServer</code>.</td>
 </tr>
 <tr>
 <td>alt.onClient</td>
 <td>Receives an event emitted from the client on server-side. Triggered with <code>alt.emitServer</code>.</td>
+</tr>
+<tr>
+<td>alt.offClient</td>
+<td>Stop listening to custom events from the client.</td>
 </tr>
 <tr>
 <td>alt.emitServer</td>
@@ -179,54 +189,113 @@ Client may only talk to WebViews and the Server.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="server-to-client">Server to Client</h2>
-<p>The server may only emit data to the client-side with emitClient which requires a Player.
-However, a player can also be substituted for null which will emit to all players.</p>
-<p><strong>Server Side</strong></p>
-<pre><code class="lang-js">alt.on('playerConnect', player =&gt; {
-    alt.emitClient(player, 'sayHello');
-});
-</code></pre>
-<p><strong>Client Side</strong></p>
+<h2 id="server-to-client">Server to client</h2>
+<p>The server may only emit data to the client-side with <code>emitClient</code>, which requires a Player.
+However, a player can also be substituted for <code>null</code> which works the same way as <code>alt.emitAllClients</code> by emitting it to all clients.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-0" data-tab="tab1-0" tabindex="0" aria-selected="true">Client-side</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">Server-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tab1-0" role="tabpanel" data-tab="tab1-0">
+
 <pre><code class="lang-js">alt.onServer('sayHello', () =&gt; {
     alt.log('Hello from server.');
 });
 </code></pre>
-<h2 id="client-to-server">Client to Server</h2>
-<p>The client may only emit data to the server-side with emitServer.
-The server-side onServer event will automatically receive a Player in their event handler.</p>
-<p><strong>Client Side</strong></p>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tab1-1" role="tabpanel" data-tab="tab1-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.on('playerConnect', player =&gt; {
+    alt.emitClient(player, 'sayHello'); // Send an event to a specific player
+
+    // Send an event to all players
+    alt.emitClient(null, 'sayHello');
+    alt.emitAllClients('sayHello');
+});
+</code></pre>
+</section>
+</div>
+<h2 id="client-to-server">Client to server</h2>
+<p>The client may only emit data to the server-side with <code>emitServer</code>.
+The server-side <code>onServer</code> event handlers will automatically receive the player that sent the event as the first argument.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-0" data-tab="tab2-0" tabindex="0" aria-selected="true">Client-side</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-1" data-tab="tab2-1" tabindex="-1">Server-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_tab2-0" role="tabpanel" data-tab="tab2-0">
+
 <pre><code class="lang-js">alt.on('connectionComplete', () =&gt; {
     alt.emitServer('sayHello');
 });
 </code></pre>
-<p><strong>Server Side</strong></p>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_tab2-1" role="tabpanel" data-tab="tab2-1" aria-hidden="true" hidden="hidden">
+
 <pre><code class="lang-js">alt.onClient('sayHello', player =&gt; {
     alt.log(`${player.name} is saying hello`);
 });
 </code></pre>
-<h2 id="server-resource-to-server-resource">Server Resource to Server Resource</h2>
-<p>The server may only communicate with itself with on and emit functions.
-The client may only communicate with itself with on and emit functions.
-They speak across resources as well.</p>
-<p><strong>Server Side</strong></p>
+</section>
+</div>
+<h2 id="server-resource-to-server-resource">Server resource to server resource</h2>
+<p>The server &amp; client may only communicate with itself with the <code>on</code> and <code>emit</code> functions.
+They are sent and received across resources as well.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_tab3-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-0" data-tab="tab3-0" tabindex="0" aria-selected="true">Server-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_tab3-0" role="tabpanel" data-tab="tab3-0">
+
 <pre><code class="lang-js">alt.emit('hello', 'this is a message');
 
 alt.on('hello', msg =&gt; {
     alt.log(msg);
 });
 </code></pre>
-<h2 id="client-resource-to-client-resource">Client Resource to Client Resource</h2>
-<p><strong>Client Side</strong></p>
+</section>
+</div>
+<h2 id="client-resource-to-client-resource">Client resource to client resource</h2>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_tab4-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-0" data-tab="tab4-0" tabindex="0" aria-selected="true">Client-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-3_tab4-0" role="tabpanel" data-tab="tab4-0">
+
 <pre><code class="lang-js">alt.emit('hello', 'this is a message');
 
 alt.on('hello', msg =&gt; {
     alt.log(msg);
 });
 </code></pre>
-<h2 id="client-to-webview-and-back">Client to WebView and Back</h2>
-<p><strong>Note:</strong> Resource in the HTTP address refers to the resource that you are currently writing code for.</p>
-<p><strong>Client Side</strong></p>
+</section>
+</div>
+<h2 id="client-to-webview-and-back">Client to WebView and back</h2>
+<p><strong>Note:</strong> <code>resource</code> in the URL of the WebView refers to the resource that you are currently writing code for.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-4">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_tab5-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_tab5-0" data-tab="tab5-0" tabindex="0" aria-selected="true">Client-side code</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_tab5-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_tab5-1" data-tab="tab5-1" tabindex="-1">Client-side HTML</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-4_tab5-0" role="tabpanel" data-tab="tab5-0">
+
 <pre><code class="lang-js">const webview = new alt.WebView('http://resource/client/html/index.html');
 webview.on('test2', handleFromWebview);
 
@@ -238,7 +307,9 @@ alt.setTimeout(() =&gt; {
     webview.emit('test', 'Hello from Client');
 }, 500);
 </code></pre>
-<p><strong>Client Side HTML Page</strong></p>
+</section>
+<section id="tabpanel_bHGHmlrG6S-4_tab5-1" role="tabpanel" data-tab="tab5-1" aria-hidden="true" hidden="hidden">
+
 <pre><code class="lang-html">&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;Hello World&lt;/title&gt;
@@ -256,6 +327,46 @@ alt.setTimeout(() =&gt; {
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+</section>
+</div>
+<h2 id="unsubscribes-from-events">Unsubscribes from events</h2>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-5">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_tab6-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_tab6-0" data-tab="tab6-0" tabindex="0" aria-selected="true">alt.off(Server-side/Client-side)</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_tab6-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_tab6-1" data-tab="tab6-1" tabindex="-1">alt.offClient(Server-side)</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_tab6-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_tab6-2" data-tab="tab6-2" tabindex="-1">alt.offServer(Client-side)</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-5_tab6-0" role="tabpanel" data-tab="tab6-0">
+
+<pre><code class="lang-js">alt.on('customEventName', customEventFunction);
+function customEventFunction() {
+    alt.off('customEventName', customEventFunction);
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-5_tab6-1" role="tabpanel" data-tab="tab6-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.onClient('customEventName', customEventFunction);
+function customEventFunction() {
+    alt.offClient('customEventName', customEventFunction);
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-5_tab6-2" role="tabpanel" data-tab="tab6-2" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.onServer('customEventName', customEventFunction);
+function customEventFunction() {
+    alt.offServer('customEventName', customEventFunction);
+}
+</code></pre>
+</section>
+</div>
 </article>
                     </div>
 
@@ -275,6 +386,8 @@ alt.setTimeout(() =&gt; {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../styles/docfx.js"></script>
 <script type="text/javascript" src="../../styles/discord.js"></script>
 <script type="text/javascript" src="../../styles/main.js"></script>

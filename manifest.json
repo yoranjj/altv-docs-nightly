@@ -13,18 +13,778 @@
       "is_incremental": false
     },
     {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.AreaBlip.yml",
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "search-index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/README.md",
       "output": {
         ".html": {
-          "relative_path": "js/api/alt-client.AreaBlip.html",
-          "hash": "CRphE97Y6IqNl4mKJkH4Kg=="
+          "relative_path": "gta/README.html",
+          "hash": "hf72nqGnk/7zuLxYXgNrrAC3mo6bnET9e+dgkGOCnUE="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/api/index.html",
+          "hash": "uLZ0O7SiB3QMfx4WLr6cqc57tvEdJ1+odY1dMfjONdY="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/index.html",
+          "hash": "lTTq6ZkdqDvPEUGjZZQ6yVVfjtJrYyJhK6IeU3VX85U="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/ped/bodyparts.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/ped/bodyparts.html",
+          "hash": "sLnEPf1yw5vgEvLysya7YIuWhXs/y5kq52UFiL/1QPU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/ped/bones.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/ped/bones.html",
+          "hash": "82luj9SpMV1ptLESLa9o9PYLxRcXroqUFcopsOXKv20="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/ped/clothing.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/ped/clothing.html",
+          "hash": "l7Scv7A9h8a732w8+qSoc+qQQs935h1lf6KJq43Iyf8="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/ped/flags.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/ped/flags.html",
+          "hash": "mPXhA3yEFhmPtf0ITM5af7ZBO1zbPUc3TPf36wampuU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/ped/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/ped/index.html",
+          "hash": "DOS3goA23dHONv1VufGygF+T5ssn7x9Z7ooi4Ms14Mc="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/ped/models.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/ped/models.html",
+          "hash": "btJcefSWEnsoLAs98aVQ49LbwkLBwz32zPraDoyNYr0="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/ambient-zones.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/ambient-zones.html",
+          "hash": "mibDnUrFkmKAbL9unvoi3wJWJVJfAehUBq3ARA5QCqY="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/audio-flags.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/audio-flags.html",
+          "hash": "UPnXEPgNZUfNMW6mmcS95Dpfrj6WIduSiqX44wqLxg4="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/controls.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/controls.html",
+          "hash": "DKPTrX3H1/Zw20ySz0cc59Nzjnk1bdVornnoX5e/s3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/data-files.html",
+          "hash": "gCU4pF3fxHrzwvdAYXZ1CvKV+ep6a+JZXJ14Nyf/x58="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/dlcs.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/dlcs.html",
+          "hash": "4RiZmSa6L/ls3OitFVyJP2NmqahnIOuLFfuvw49BYcs="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/hudcomponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/hudcomponents.html",
+          "hash": "M2E3EdIaoaG3LUD1zGp+9vpAueGkLgsk74CDQCsZitE="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/index.html",
+          "hash": "i+3zIyVEqyX/KKpP5CUS2db6KuEkompyzMqcIzThXXo="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/interiors-and-locations.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/interiors-and-locations.html",
+          "hash": "DBaJi9xU0RtVkZlyDZDDoqBvKQJIpbnduHCELYxq3Jw="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/time-and-date.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/time-and-date.html",
+          "hash": "KF0Y1xRCICZPW2/jaGtRwcx78Y3sXYz3mymfZOKJrqs="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/trains.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/trains.html",
+          "hash": "SSIHaRjC/CEiDTA1TJMbRS72Lk1ASrtGsoQEMOVyano="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/versions.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/versions.html",
+          "hash": "fXNuWrYZU4zLd2PjDRcLLI9jairVTsbt/XKHCoNEKl4="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/ybn.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/ybn.html",
+          "hash": "mke/gORKWqCxTaOadZAdazWwlHU1aarkxXmmn4hQLUo="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/cayo-perico.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/cayo-perico.html",
+          "hash": "FBpEZOPBEet87Iv87g3iGL2bDmsZ5ic34xgmLR8bcNI="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/index.html",
+          "hash": "RjpP22s/oz7bMjqJyimFTl21gBMU0DjYRy4JRqjToDw="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/request-model.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/request-model.html",
+          "hash": "0e+v+mDRIENIlT7GuWwkO5epcph0dAT5SiJ/UdGTZMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/add_client_mods.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/add_client_mods.html",
+          "hash": "nlj+HKxBuOY5TP+NdzbJyx7wdgsMHLp+6N7AfnWw4ec="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/index.html",
+          "hash": "D/7l0bENxJspOdeR5Fr/HMQ02+2EpToJ62WxuXoMMCQ="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_clothes.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_clothes.html",
+          "hash": "1Ve9W44ZhmLPeWXZAglS9LQKDrtSTWl0oxT4mmC3XBQ="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_interiorsproxies.meta.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_interiorsproxies.meta.html",
+          "hash": "6RgEUzijG+mtKPgAOBUDbliBVbtsFtVWZG3XjCXzs2k="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_mlos.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_mlos.html",
+          "hash": "DJ4eUg7E7SqzgerQDtpov8ys2WTRkXlaoN5/QMGDbag="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_peds.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_peds.html",
+          "hash": "G1YZTy6LhP7r+9wE3r+andD0ZgMEDdP2Zml/6IaN9zA="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_sounds.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_sounds.html",
+          "hash": "K2OxLGYyYBgaEV/8WsP89U5PGYwviW7nKHt/Haf+0Ys="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_tattoos.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_tattoos.html",
+          "hash": "+CBTCpIJ1TLPFhpRY0mn3BsznFKitaiL1E0M7b4PqaE="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_vehicles.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_vehicles.html",
+          "hash": "/tFsKmanUvcnJjYRiUjXfE1XwM9hYrvMv9qwtUjJMAU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/tutorials/stream_weapons.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/tutorials/stream_weapons.html",
+          "hash": "6ERy2rWQDRl/mduGjvXuCJldjUIDZOvB5kpOwRgdrXY="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/bones.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/bones.html",
+          "hash": "HJ47i3K2gF65yvdduKWpE0jP3u/CNWlbdCorfz9vUZU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/classes.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/classes.html",
+          "hash": "zKINoXgD39ftYUaJlHCqaI8GAePzbvIACIKQ5CvyGJE="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/colors.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/colors.html",
+          "hash": "/f2vxB95GR3rZ1dXBPM8ZFa0PjK+zethTcXaMoNbvAY="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/flags.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/flags.html",
+          "hash": "aShAcD6QwJcmhcIH+/IKJdQPoPYRTdFjEKe0EAQX83A="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/index.html",
+          "hash": "zy3iu5ZZdmoF3KBePzAaNaZ1WiYJw3PRErDttaO+QFU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/models.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/models.html",
+          "hash": "07u2JgLINDfQyL5stESyGPOgJHstccr35i9+GiTDbwU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/mods.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/mods.html",
+          "hash": "HuTCz/e3Opi+xmGyvSnPZ0cLTvIbVEOVwaN3KV4ia6I="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/vehicle/types.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/vehicle/types.html",
+          "hash": "MEjcKDM/P/wtEb5foNdJzgr+vZCkvhtUXj6HoHc7pPY="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/weapons/components.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/weapons/components.html",
+          "hash": "XZSsNK2VyYph+TLfqX9g7MUfZr0ASMA7GDOJwlOA4nU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/weapons/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/weapons/index.html",
+          "hash": "N3R4vbMp8PyukknwZ4+LzMRHNX6w4V8AdIw98YCwDhs="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/weapons/tints.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/weapons/tints.html",
+          "hash": "76zChGBthMYFVbMvE/7acqBazkGNT0NPAfiZKuNf1hQ="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/index.html",
+          "hash": "D3jvdOAExUAeyiIazQabwm7xIV8wH7I9y3p6pe/0E+g="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js",
+        "csharp"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.AreaBlip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.AreaBlip.html",
+          "hash": "VwabVTwtoqlSqTYp3Jf2eYNNqop9hiJNpMD7hbe/KNA="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -33,13 +793,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Audio.html",
-          "hash": "UMB8Nluj7iHcMLBp4rUtGA=="
+          "hash": "hJWMQDT0jLN74l0rDz2zKHB2Qshe1o4P2Wb4din4CMU="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.AudioCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.AudioCategory.html",
+          "hash": "giYshI6Ka8kQ+rcaba/t8Ose+BCSoR0RKQC+PxB82Ns="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -48,13 +823,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.BaseObject.html",
-          "hash": "biw4tf2IVNq8JP0VB+2xbg=="
+          "hash": "xuUoWxNbdVFET9gIQ0WSaxrXhc5WNjcr/TmM1cK3Lgw="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -63,13 +838,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.BaseObjectType.html",
-          "hash": "Zx66AFhD4RvtnHgJhw+MqA=="
+          "hash": "xJnn6Go+upVFrkCeD2TSIZP60CqjRnePE47ZMCpr104="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -78,13 +853,43 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Blip.html",
-          "hash": "wWWJcs6njYRiTpMJe7P/Lg=="
+          "hash": "fNifiCgPyLnvYSjRMvLN6RFISzLGtYmCFnw60yi3qRo="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.BlipColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.BlipColor.html",
+          "hash": "msJbIg12HscaqpgHQKp9hXpJ/C1fqH3ek7QLPm3dj/E="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.BlipSprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.BlipSprite.html",
+          "hash": "RVCgYh7sYHRQfQ0yr7W+cMhj1v62pZMyaLD051pp6n4="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -93,13 +898,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Checkpoint.html",
-          "hash": "58u45C32wBM3biSvwkjDFA=="
+          "hash": "ISzhxAlkN6vUyLpWT8etkatMzfCHMRLGuo0gnD6hCcE="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -108,13 +913,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.CheckpointType.html",
-          "hash": "HHTYAqei1YyMix2dfXr/Pw=="
+          "hash": "F6DVBkZpRXyFVOvoQ8Mo06rnSLknyPOO9s+FxctkUm4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.ConfigFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.ConfigFlag.html",
+          "hash": "lFwR2Ygcj33Ok4XYKMwTNDjp2pv+pngOeBqfoWH4mQk="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -123,13 +943,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Discord.html",
-          "hash": "2yDggWVqdymdq6FxayJXDQ=="
+          "hash": "bUpmX7Kzv1EVBtRIVy5Tc1a/WQCwO5HMVstD1iXZR9I="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -138,13 +958,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Entity.html",
-          "hash": "NgAinvU+RVsqTvTRbucqoQ=="
+          "hash": "vQvc8/xX2ZBeeFL1mIzBN4sdwhTAvbcPETppiIubLGM="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -153,13 +973,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.File.html",
-          "hash": "owK/M8rnugQlHNqusTbMtw=="
+          "hash": "Zm6VAmxsFexgoHiwsBNMyye4qbL37F/XJ8aV/Ga1F8A="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -168,13 +988,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.FileEncoding.html",
-          "hash": "ZAFbmxYKZf+RiX2lTLDL2w=="
+          "hash": "C2eT6tO5krwnu9UtksLa/fHDLflt+V+Eiz/5IgrGox0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -183,13 +1003,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.HandlingData.html",
-          "hash": "ATg3Y+uFM41cE6SUAAjzTA=="
+          "hash": "PAm9H6sgWw9drqEpU/HEzJHuHLCS0CsliACKzKGzn8k="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -198,13 +1018,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.HttpClient.html",
-          "hash": "1OgzUMwW5kLeU6TOAshA/w=="
+          "hash": "jE0VmvHrWQ5bPyr3aUCF/DKmHJW5OnBKjKicL9I0Kt8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -213,28 +1033,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IClientEvent.html",
-          "hash": "8GJvagdu5ZUkuzbSA9zJCw=="
+          "hash": "e4TUaOPxZig2F0AGQQORxivbI1g7ZFe8h56GGzuu9Tk="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
-      ]
-    },
-    {
-      "type": "TypeScriptReference",
-      "source_relative_path": "altv-types/docs/api/alt-client.IDiscordOAuth2Token.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/alt-client.IDiscordOAuth2Token.html",
-          "hash": "4RMU/YFMKkFWR7DP6TyYKQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": "",
-      "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -243,13 +1048,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IDiscordUser.html",
-          "hash": "Gz96MASbN70sZybse7z5Sg=="
+          "hash": "IPo2lw+7rqk0DvWHsdN+cofBEAsSZppkMP2un3Bv52c="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.IHeapStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.IHeapStats.html",
+          "hash": "kDWncd7aEKu0UNpBqxpCtIDf5aebDw5QITyWc13Gums="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -258,13 +1078,58 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IHttpResponse.html",
-          "hash": "Tz0cUakb3A4uF2s+yE0rvA=="
+          "hash": "86iWPb6eH4a2oCcnpKZwoAJURusn8ivRILW1U7LjjUs="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.ILineTick.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.ILineTick.html",
+          "hash": "8n3UdOkxIyond9lBpDQ8QVyaBnQ+eJ7bjd72mC34OZc="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.IProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.IProfile.html",
+          "hash": "u5nb9RZUYER9XFtE1B0KVoot852LitvAyIRCudOlHK8="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.IProfileNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.IProfileNode.html",
+          "hash": "5QQhtiblfn+KTMdJxbNOvB3ZzGaQt2HEH+4Q0inPTXk="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -273,13 +1138,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IVector2.html",
-          "hash": "EMlIIfK7dTWalFTroHIhNQ=="
+          "hash": "VBGehbYW/j9MwKCFyGnsf1eZeEUXjInsuU9Wix77IYE="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -288,13 +1153,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IVector3.html",
-          "hash": "qvQ6rXFADQ1Ay3LwJ+MUqQ=="
+          "hash": "lINNv/jIgKTF2MBgaYlciWNCDTzPXVagvcCw3C0K7BI="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -303,13 +1168,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.IVehicleHandling.html",
-          "hash": "HgIQ3nWnNBk5+jImIffyWw=="
+          "hash": "7HPi0v+JOHNoJmKH+6wrjGEyKVnKAJO0mhzs8IYlaf0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.LocalPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.LocalPlayer.html",
+          "hash": "hcPOthYD39Hc3Ksj4gwTf3QQnHNV16tecqOs1Xib838="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -318,13 +1198,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.LocalStorage.html",
-          "hash": "HIb6dq+G5hbdjJxYKXmdjA=="
+          "hash": "16LSr6YaSoX0p+5C7inUZYayPF/AYBm99BGgARmLZe8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -333,13 +1213,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Locale.html",
-          "hash": "FIzZQVx6a9yxV96sXd94ig=="
+          "hash": "39yV4Qj75d8yvXH3k5h5TxLYYcy+sVjs4f6Ot1nh4M8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -348,13 +1228,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.MapZoomData.html",
-          "hash": "r2rtn2j2LetYSqBdBr6qUA=="
+          "hash": "7qtj4mOeJyWko9bnkAul4IiWapemtdLh4ihdYjwjwuo="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -363,13 +1243,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.MemoryBuffer.html",
-          "hash": "z8ZQzuzPuispKAFhoXkW9Q=="
+          "hash": "/Wei+ePceUXrIfCPL8vHrmAzIPGYeg4PDy+0zaRUYyQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -378,13 +1258,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.PedBlip.html",
-          "hash": "5zbHIjL4LOof2+yYbUaSvA=="
+          "hash": "3NghKXm3GdZLLsEwhufxlFgxx7UR1CPuvYP/6zvC5pQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -393,13 +1273,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Permission.html",
-          "hash": "0JAJ4zLmHURdJJZ1S60jtg=="
+          "hash": "BSeOJ84jfgXynSpSTFwRqafdwtcbV/C7kDh22KNmCZ0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -408,13 +1288,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.PermissionState.html",
-          "hash": "h7Gy9FtPi3ZqZCiFPLU96w=="
+          "hash": "KXKIozlchhuenMEIl5CGraqVOfRf6HNo6XLlczTQxBQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -423,13 +1303,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Player.html",
-          "hash": "nCkppp/iKkt9jQcZBVRlVQ=="
+          "hash": "RO0RbMMwRy42Miq7c/SB8oR13ZuxSRByyrrbrS/dTfQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -438,13 +1318,43 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.PointBlip.html",
-          "hash": "dyLFIjmhbklC8BnrvFiRBw=="
+          "hash": "l56BMGGUd7SEGnlPpuCUEuhEG+m2Kb5/ue+9qphssCM="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.ProfileSourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.ProfileSourceType.html",
+          "hash": "g/GJBykCdvgkqjNlOBckHifkhPYDi/gTUrilvaZTt58="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.Profiler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.Profiler.html",
+          "hash": "4pyMKf6dCetSGBVYSVkhX5xCmOV2op1M/iVMIvJomdE="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -453,13 +1363,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.RGBA.html",
-          "hash": "O3a+pUjjR75lOYBM2TceGA=="
+          "hash": "AvfrZ3eR62cM3nGX/mTU/nRt79VYNUjjMXKbvdG+4Os="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -468,13 +1378,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.RadiusBlip.html",
-          "hash": "Isn0uHf4dyu57PBVKGHbqg=="
+          "hash": "FLcyrswB2H/nt7HY++rWHguGgj0L9ht6bnLnK0FmToo="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -483,13 +1393,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.StatName.html",
-          "hash": "falq606XWXXMGQJlu3W7oQ=="
+          "hash": "9MnG/MMnCojU+K/VDSGqfXN1fxbAIV5B6Vfxo8QuoNQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -498,13 +1408,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Vector2.html",
-          "hash": "0IOlaKFhpZQ+ukb8JL3vlw=="
+          "hash": "69tm9oESe22PiF378kq3/c1VHsKahR+tYTZ8vTK2n64="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -513,13 +1423,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Vector3.html",
-          "hash": "vjvcQy/OD60ArpijcWWspw=="
+          "hash": "szoa66YGOa8qX5C/HOCLj1X4wSA6Twzjnkc5TDFBkHI="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -528,13 +1438,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Vehicle.html",
-          "hash": "dZ/NDqf6zyEtgNCY4x4M2g=="
+          "hash": "U626dNnV8admmwG6N2LVivZMGbBLjA8arkqetj1eoH0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -543,13 +1453,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.VehicleBlip.html",
-          "hash": "YYSrnqXvhG0ms5lp93Z89g=="
+          "hash": "TSnWdZ6uW6S7ScGyTG5m0JX13jWKinR4sMWtTX8VkkY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.VehicleIndicatorLights.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.VehicleIndicatorLights.html",
+          "hash": "lgRBvLAd2H6RDAz9PkhkijukVwp1ARCHM8BPKcYBFDU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -558,13 +1483,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.Voice.html",
-          "hash": "pIXLQGNgukYzxV2B3ztXVQ=="
+          "hash": "aPtIhPx7d09Fav/hEXPy2R2FJ8Do9uZCO94ZtFTxK+4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-client.WatermarkPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-client.WatermarkPosition.html",
+          "hash": "NZ7OdoCHWYlq9CAvtUciCXca4hrCLR7fVWJ8cDDjW6I="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -573,13 +1513,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.WebSocketClient.html",
-          "hash": "Z+mMx86lr7ZFsa3+HUiBHA=="
+          "hash": "6sUBf3ZiBPcSTx2nTcRGlxeRGk5/6auuREu5UA5WmIM="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -588,13 +1528,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.WebSocketReadyState.html",
-          "hash": "JTcF9bstPnSN/h35jt/tRQ=="
+          "hash": "WRmW/hgHRmDln6dutPsP/SzR2wCxhTAaW+CvNx9qLWg="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -603,13 +1543,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.WebView.html",
-          "hash": "MI39VAyLjFa6ygs6kFD8YA=="
+          "hash": "qytxDcmqsE1b5Bdl00711ATsPm/ep090Vdyex/xoas4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -618,13 +1558,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.WorldObject.html",
-          "hash": "avWxfPBxJRXxUGThK65Xwg=="
+          "hash": "Ft8tGGspwI3+x8U1a0QT62cRn2fHYMw/YcL9dD+jrqo="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -633,13 +1573,43 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-client.html",
-          "hash": "fHMh3gicjTtKVAiq6DNHag=="
+          "hash": "u9BwtEVxqv9uwIrz2mOfZRWWLDWA/PmTRxfT+vEP1MQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.AreaBlip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.AreaBlip.html",
+          "hash": "HWQK5QXIOuN1ZXDXvvIWPOKIGb3gxxcKW5nq11cIhfs="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.AudioCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.AudioCategory.html",
+          "hash": "bH7eEcuTADVUuIjFCm3TQfbCEhypr9ZhtyYPBvprm/E="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -648,13 +1618,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.BaseObject.html",
-          "hash": "uSDvZvTvpgAi0rDv4WvOKg=="
+          "hash": "R7pJYjnS3AKWQMm3ZUERQh1jmXEpE1ynEzJwMW1lpLY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -663,13 +1633,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.BaseObjectType.html",
-          "hash": "H1LlIFgkboGEbiVUMfjzCA=="
+          "hash": "E+scnQNgxbtTf6K6P4xX+vKjLLcI4UqTXFZhNF8f0Ks="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -678,13 +1648,43 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Blip.html",
-          "hash": "Kgszzm3HW0vQyX5ASS0o2w=="
+          "hash": "zcBac3vDu7hDFMwC1B/VtViOSrupMc143u6KMolVLW4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.BlipColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.BlipColor.html",
+          "hash": "fOywIxO/os2IRFSAyfTv1+kxMWRxqGw0JpVYS4TKhyU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.BlipSprite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.BlipSprite.html",
+          "hash": "RCRz7ZobvTYefaA87SI2IqlLXjgiX0UqWGgmpdVireU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -693,13 +1693,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.BlipType.html",
-          "hash": "uvkAVe9GAzQog5g+qGlsCw=="
+          "hash": "jLfB8MyLmhgrl16WBqIczbnoFCjKlXjVbfcx6Vbeuac="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -708,13 +1708,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.BodyPart.html",
-          "hash": "VOLCxxnM79AWP6Fx5nbqkQ=="
+          "hash": "jvmlkHChXhBgaAOfTjKENMvgPIyVswX9gQz4ifudVm8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -723,13 +1723,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Checkpoint.html",
-          "hash": "Lo7naNWITGSzuK4iqzVh/Q=="
+          "hash": "1vx9S+jLpEme4lEH3w5JydwjgRwZz/Z490mWBCIh2ic="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -738,13 +1738,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.CheckpointType.html",
-          "hash": "Febsv1OgZtCEMU/go6VVHw=="
+          "hash": "iOTNDL4DICyqmZWXkgGoZWISBkmva9fZstBipNaVkUs="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -753,13 +1753,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ColShapeType.html",
-          "hash": "/oJiJ41SJ0NFQ4KAJIOWfQ=="
+          "hash": "3EHJmauA5c559xtfRHL+VhYzr+96Kyo7F8cGzsuxnug="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -768,13 +1768,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Colshape.html",
-          "hash": "89tuJQSsbjxjNl9R3WBzzA=="
+          "hash": "6IO6tcNN4NpJa0fKR5JUGF/hrAlaoPq5sYGwWEHTliw="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -783,13 +1783,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ColshapeCircle.html",
-          "hash": "JjVIube7SMMhIvd11xnxFQ=="
+          "hash": "4M3TkA4dhAj0FF2pqgJnpa0RB+SO6nxWCoDpcEU0SCA="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -798,13 +1798,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ColshapeCuboid.html",
-          "hash": "j1TpA25ArqA6JTuawZArjA=="
+          "hash": "Q8Qxb1ycC6j9vEL3ILJPndolmoAPjh8NhR/jgSyJpu8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -813,13 +1813,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ColshapeCylinder.html",
-          "hash": "USlxzYAEjDUwgrprua/6gw=="
+          "hash": "RGN5Y0tHzG8myGdwtwt58bM5yfKBegX0BKMmuaQZLKc="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -828,13 +1828,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ColshapeRectangle.html",
-          "hash": "3geZyxgifV9iWE8jLz3/SQ=="
+          "hash": "pAHueozuuj78UebU+rsy1xSoZ1hWJ0+QHkZY6HcY3Oc="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -843,13 +1843,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ColshapeSphere.html",
-          "hash": "rkBz1yI8+Q9tdgWcpciSyg=="
+          "hash": "A1EswIF/ufOtB2WgAdsfPvpof+MG0t7b4//gr4lV/G4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -858,13 +1858,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Entity.html",
-          "hash": "1BmwSM37e9PM6Z03Pp93wQ=="
+          "hash": "sO+x5CkEWWkFgETzcaKibAHIY3RG94+aGwlOXjbPK5I="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -873,13 +1873,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ExplosionType.html",
-          "hash": "spHy0QXc/7m6Jkyciim0TQ=="
+          "hash": "DzmSe2zc/zajJo6H0tIWhsEct+lhHCwGLJgFS8TWMB0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -888,13 +1888,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.File.html",
-          "hash": "Xqe/D9HPYTinjP+fBzVXUQ=="
+          "hash": "F8Y4JRQPfTcZybZyK7CahHMp2/OOQGXDWElzWaNuGxA="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -903,13 +1903,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.FileEncoding.html",
-          "hash": "YHh953V0IVv/JNSDkkTvjw=="
+          "hash": "J7oFHW8m18J8EaLOfS48ao0TpYNSALHo+4Ql+i0L3to="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -918,13 +1918,43 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.ICloth.html",
-          "hash": "dIPPm2hPHufx367/gIG+nA=="
+          "hash": "YrsFxEc90ZXBecIMLZSLHHQgIyM6NABYlgGvTvfpSII="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.IDlcCloth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.IDlcCloth.html",
+          "hash": "Dnqvi1pSoGyk3q3/sLVDu115bJzTAmAodNx8ejZC3rM="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.IDlcProp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.IDlcProp.html",
+          "hash": "o14bF/lD/sGkG7n8ZteQSBzU6VEx4tS+09VbpyFjHNo="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -933,13 +1963,43 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IFireInfo.html",
-          "hash": "I9BH4PIpJEkYZWlK89rdjw=="
+          "hash": "jwhRFv2esni/kvTa1ouN39zPUbBXgGTJcKdIBX/Yauc="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.IHeadBlendData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.IHeadBlendData.html",
+          "hash": "wwshgllVQ3Y3YZly/YPTvtLmHyBCG6veSwGONMdG1fk="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.IHeadOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.IHeadOverlay.html",
+          "hash": "b7f2FRH6E5cqJJx+0omUVpLfrsZJZy4/E1ZNbU3/At0="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -948,13 +2008,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IProp.html",
-          "hash": "mPQi8Z9nQYrl8ukS7ytoWw=="
+          "hash": "K/WOD3JL8lb48n9B/mkWUtrdO1ajIY+M8g6hY9tgUzU="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -963,13 +2023,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IServerEvent.html",
-          "hash": "043vSiMCkOsd+FH59YY2Mg=="
+          "hash": "bo/H1+vVNyqUNhgIeHExStj6Xjp1aLbyqRwT8goseN4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -978,13 +2038,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IVector2.html",
-          "hash": "Pzo63Z9SKU0suGmHojfBuA=="
+          "hash": "9/lyyUmA3PqrPIa9QOVECeIFv0fuW7zDs6XUfk7b/3w="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -993,13 +2053,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IVector3.html",
-          "hash": "+BQPZz26KN7lptROyaLJjA=="
+          "hash": "UDpEKU8rN6MritfvJKT4csHZKimQwD4ztvGsRKWZioY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1008,13 +2068,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.IVehicleNeon.html",
-          "hash": "xHa4MABbqXNhEMsn31GLIA=="
+          "hash": "VEBqMh8zBidoNkxf+nPeLW7l5QylUUC6nS0QTFqQdGY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1023,31 +2083,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.NumberPlateStyle.html",
-          "hash": "Qw30Jn6+UABQLdKZMvPvUA=="
+          "hash": "Sp4NLs4H9+hYTsAbRd4q4BCqiEgbaw8J3xLgxjl2yi0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "TypeScriptReference",
       "source_relative_path": "altv-types/docs/api/alt-server.Player.yml",
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Player.html",
-          "hash": "LrBiJPhjouOxaPMnlslEhg=="
+          "hash": "dpjtYKh3ysXSwcQ9ZZvFr61Q4ZHt5CvrwbaCwlE1qng="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1056,13 +2113,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.PointBlip.html",
-          "hash": "0IIZsAOYAmm/+TrnCKB9oA=="
+          "hash": "UyN/Jvbn1h3YWS7YVFTDNZ7sJW/yWU3WMHDC2Db2SOQ="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1071,13 +2128,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.RGBA.html",
-          "hash": "fanErB8hfJJdngDf4QM8Vg=="
+          "hash": "XK0U2MlwL3+HlJWgyZ6NqoY2JoDD5ntS8O4YotrcBSY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1086,13 +2143,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.RadioStation.html",
-          "hash": "jRKdBCkU6rrnXVV9rC/EjA=="
+          "hash": "Foh5q4M1FXTJNPkBnbLmEnRvki3+MUPEXf+20gSEtwg="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.RadiusBlip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.RadiusBlip.html",
+          "hash": "6nANgNSZ4jmLwgy08A3cOuGqHwvroypVeIE9xnad2B0="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -1101,13 +2173,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Vector2.html",
-          "hash": "r/SPInqKOX/PrhdgjWaTfw=="
+          "hash": "t3PGTMP4gAiAN4NjMazOVT+/MrpwXt7uimUNxDrjn48="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1116,13 +2188,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Vector3.html",
-          "hash": "s6uGOyY+54+zFyfihuJwQw=="
+          "hash": "GXroENQEikuRQlw/NjQcmFJM7K3dNX6/A+lQbIWMrsY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1131,13 +2203,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.Vehicle.html",
-          "hash": "q8l2cVqnQnYVqSleomxEQg=="
+          "hash": "vbchJHVsFV3ACnxDVgnfx5MasAbfuzNope40jCPkde4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1146,13 +2218,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehicleBumper.html",
-          "hash": "WoQQIJ4jbySkXuSTrUSSRw=="
+          "hash": "azlbGA4uxOqdn3RZeNcUOyGijnQletDpjrwZYgf7hj4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1161,13 +2233,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehicleBumperDamage.html",
-          "hash": "7fp3tS7VMld7xy7azInoFA=="
+          "hash": "FviX3wtr8rJ+nKN+zqYydzPXv/YeyaJEEnDjpIobbR8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1176,13 +2248,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehicleDoor.html",
-          "hash": "FO0wZrzu+tUhaM7hC+hS5w=="
+          "hash": "yZGiJJoT3rw84vbfpscnG+MeSK8saO4fptwxBPwliy0="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1191,13 +2263,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehicleDoorState.html",
-          "hash": "xC2x6MuYQeZQLCjnitufdQ=="
+          "hash": "nsnHW20Fgt1SZEjs6vQ+XZ179Vg/HO4sTA/cTVHbnCk="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1206,13 +2278,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehicleLockState.html",
-          "hash": "gjEgd0yB8xd2ZqNajP5YWw=="
+          "hash": "2bG5O/TsAfcnVcai+xRjIssJUBnMD85x36NWfaMaf9A="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1221,13 +2293,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehicleModType.html",
-          "hash": "Umrryv4ffs5HgjRg9w0gFw=="
+          "hash": "nalc6PQ71cFMIXEKe16EeFWY+scCZUs8doPte7k1Gi4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1236,13 +2308,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehiclePart.html",
-          "hash": "Qmp4MHOcd7SjzP47fpugWA=="
+          "hash": "qUqVxkjb1TXyZObm4l3xdVSSfAfiSQ2WrReTnlJlkMc="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1251,13 +2323,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VehiclePartDamage.html",
-          "hash": "sDVoliWwyzdWyGCdki81bg=="
+          "hash": "ovSBkAsro90YTgd6Yn44+bmeBMc0mA3E7bBsk2gqtok="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1266,13 +2338,28 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.VoiceChannel.html",
-          "hash": "+cdPxE0d5vYLslp5bCfiPQ=="
+          "hash": "dWUH9+Ei8eWX4JtHullroO+dmJRQJnjnIuqXka5dvH4="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
+      ]
+    },
+    {
+      "type": "TypeScriptReference",
+      "source_relative_path": "altv-types/docs/api/alt-server.Weapon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "js/api/alt-server.Weapon.html",
+          "hash": "mUmHnydiMzbYkIrH/c6tB86vJ37VCcohk8W9izP6VPo="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
       ]
     },
     {
@@ -1281,13 +2368,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.WeatherType.html",
-          "hash": "0rlAZYyPHTdJKdfkpLXlNQ=="
+          "hash": "pgqj0geZfhkDwtEA3yQgH5tzf4TMwV3jTSngGVl2ytY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1296,13 +2383,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.WindowTint.html",
-          "hash": "58VwWqYJhapw+r/6eCDFaQ=="
+          "hash": "3y12UBoSwpAylXI48JsN4bCDsoOQbkmH2hkBbTMvBYY="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1311,13 +2398,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.WorldObject.html",
-          "hash": "7OZSxnpm/xyQBt+rtiPmJQ=="
+          "hash": "EoAoKlcV9lALrfek2cEBnneYIg4ySc82udUIV8DhCn8="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1326,13 +2413,13 @@
       "output": {
         ".html": {
           "relative_path": "js/api/alt-server.html",
-          "hash": "O5N3sOPEPOHxScQjuAEuEQ=="
+          "hash": "hY9V8+2hSv70NSMm4r9tOxFotbibHGKpCLy7nzL1oxs="
         }
       },
       "is_incremental": false,
       "version": "",
       "langs": [
-        "typeScript"
+        "js"
       ]
     },
     {
@@ -1341,23 +2428,14 @@
       "output": {
         ".html": {
           "relative_path": "js/api/index.html",
-          "hash": "keXq1UR9h+YTVHZ2S8zv7g=="
+          "hash": "qcHU3SKJG6DOYHwBG7x00KTfmTFllAMEyrNP7RmZJ4w="
         }
       },
       "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "altv-types/docs/api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/api/toc.html",
-          "hash": "FMYSCmyIKIG5ENKERXFITQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1365,11 +2443,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/create-your-first-resource.html",
-          "hash": "YUhEWdOdyzbtdVaQOk2M7w=="
+          "hash": "bbuoBTy/ymy7BsNRC6HVb91WVLnsi9CGUilrcO4vcSQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1377,11 +2458,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/index.html",
-          "hash": "WKjr3qJoe9glHvctow1wLw=="
+          "hash": "p6FZyTNHdZy46D1AimhH+ojVC3ceMlDxSiEDnlYX4dE="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1389,11 +2473,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/localstorage.html",
-          "hash": "iADyKAEPXRN1Hm1ExbnBcA=="
+          "hash": "B2GBpyhUnT+EQGg+be9y3d8cvjp6hTkabqDAeJWw9KQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1401,11 +2488,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/player/index.html",
-          "hash": "yAgFt1TU7IhZFjP4pZweuQ=="
+          "hash": "IFa2ecXQz0f26gxNxuDmL70SdlcT9VGBKqZZwD7Ivjw="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1413,11 +2503,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/player/player-script-id.html",
-          "hash": "04fSkXD1USxsd4DE2lW6hA=="
+          "hash": "eOWEdNRx7UK1zo35vUlTdvPuY4ahL+tOl27E8kipIOI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1425,11 +2518,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/player/server-player-funcs.html",
-          "hash": "CDNHNErSNnF6KkWbeIXc3Q=="
+          "hash": "mtUzlbxhCkNVe5ZFDsKFTHEQpAjUyp+ed7Dc1HLbWwI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1437,11 +2533,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/player/server-player-props.html",
-          "hash": "xo/iIlmNcdh23Er40tTOOw=="
+          "hash": "pd4gYomsHTS25Mdpm5P9D6AwghS6fc/I7pYzHN9h2EI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1449,11 +2548,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/setup.html",
-          "hash": "n8Fxr20O+TVyhTDl5GNfWg=="
+          "hash": "s8Se6tjx7LrvRhqOYz6YImuzhlsHzbAzNtuCaK8GhFI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1461,11 +2563,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/encryption.html",
-          "hash": "5GYF251FV7ybFwnrDPgRUA=="
+          "hash": "xDmQfxDMHmiS1h5SESz05E7fVGm8qsgFaWwsef9uwRg="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1473,11 +2578,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/helptext.html",
-          "hash": "tY9RNZiulamjQljhagDZ2g=="
+          "hash": "MjEmZms3EgRgcXnWugA/gmIeCO/HfOdN/iZc5K4NDHg="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1485,11 +2593,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/index.html",
-          "hash": "kmRDQauGnODdRGyzrwvfCg=="
+          "hash": "mpY9ZrALojWDCTcqNbUTnb4QD4BILHixhf6sT5/ZnvQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1497,11 +2608,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/markers.html",
-          "hash": "af34TTVz+p4mBakwtQFwYw=="
+          "hash": "P0RepLEVHZQPpLgoTGxQCJwrvsR7+Oj0H/KwKf0iAf8="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1509,11 +2623,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/math.html",
-          "hash": "GbSCX7cUk/ug1YxEP1VkOA=="
+          "hash": "//9iaBpxFbC0vhAxr+yzgW/JpDGA1d3twhjle7iv7TM="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1521,11 +2638,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/notifications.html",
-          "hash": "mMS4O84gp2RQ5Kw3EngSjw=="
+          "hash": "bTsLsPxBEJYb/UWLTyprRpGh0whY6JwpTrBHc7MlS2k="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1533,11 +2653,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/prototyping.html",
-          "hash": "sysy+ybLn8pfFHWvZz3bPA=="
+          "hash": "RyTfZfxmlACGx3lA0PJmSX2K0Ikam8XJ/ODcD34lW7c="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1545,11 +2668,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/shuffle.html",
-          "hash": "x8GwMYmvYzljZw8Ocliduw=="
+          "hash": "cC33sU23/ZfGMjOhBWALw800Ki0fqqrmmpczBVNJBQ0="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1557,11 +2683,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/textlabels.html",
-          "hash": "+aH7c0AXwmKYoObBi0WrZQ=="
+          "hash": "/0+MiTlx/3fMraXl0v8hZIWgPx8YUKkeTDDl+jq/5fE="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1569,23 +2698,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/snippets/voice.html",
-          "hash": "qjPsC8RRZTsZnRRZXPZRRQ=="
+          "hash": "9/xP3yxl2G+8fHdHNACRkBVcYOS6p7+k8Z1YgUUZiEs="
         }
       },
       "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "altv-types/docs/articles/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "js/articles/toc.html",
-          "hash": "zHLUmL5ksncxNFgXtClzcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1593,11 +2713,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/understanding-events.html",
-          "hash": "xL0t0IXgvpqs6GlYrYxLuw=="
+          "hash": "vGBrPh6si1gdGsIrBd/gDjy3k11LUIPcGwoTW0g71FI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1605,11 +2728,14 @@
       "output": {
         ".html": {
           "relative_path": "js/articles/vscode-setup.html",
-          "hash": "8JpWZqHFW6l/38am2MoNLQ=="
+          "hash": "RIwaKqA8dduIyEqSqZKeC0OVXrsazXPhwU5V/10isVw="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "js"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1617,7 +2743,130 @@
       "output": {
         ".html": {
           "relative_path": "js/index.html",
-          "hash": "hkNP8qETWj8QwNcUW9c9fQ=="
+          "hash": "35cHfqopY3f/6w48i4uz41fOkNglEIgYbsz+xYnHQC0="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "js"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/branches.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/branches.html",
+          "hash": "pDgoj6hnYEXXYiL4EKJee928imF69KSaQOCnDJiouvo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cdn.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cdn.html",
+          "hash": "K2JrD7eCwnPAFaniBJV4lRM0R0hcGcfd++bI3lcKRdU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cef.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cef.html",
+          "hash": "hAJcycR0kYPirHWS3Fvs702QC9mdm4dQA9Sb9G4Bl20="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelogs/2_2.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelogs/2_2.html",
+          "hash": "eC9yvoqDYNRJid4lqpPmm8Ap4oGIWJCdpUOOHtYrZc8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelogs/4_0.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelogs/4_0.html",
+          "hash": "hQhUTGLhPAAHkrJzYnyVKYl/aqvi0DDT19jKtdYFl1E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelogs/6_0.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelogs/6_0.html",
+          "hash": "8Hlo+S0GpUbc0+dZBrwhv+ivsqN2QCYwMbH9FVgutS8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelogs/7_0.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelogs/7_0.html",
+          "hash": "tFQJJN3yQuty9LlUG9B7/3TNz+ZFCyGmHWWUCqZ26IU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelogs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelogs/index.html",
+          "hash": "R/UTmJ9nwfDfbhrqKYblKQtDZockiEYZLjBoiWrRAIA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/commandlineargs.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/commandlineargs.html",
+          "hash": "PV56F3gXMWFfijBTZgtW9hUm8VLiCHrMFqhMFsFmFGs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/client.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/client.html",
+          "hash": "+mKKsyheUDMVAxwqR8Pe/s3ooN4q6pEJ4UIH88zGULE="
         }
       },
       "is_incremental": false,
@@ -1629,7 +2878,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/configs/index.html",
-          "hash": "1QVKfyFhZ6RFNxiZxwJZtg=="
+          "hash": "fc6h5qY5ZDf6P8c+9/LjPX4CMN/HNr6ENL+hWkE2yKY="
         }
       },
       "is_incremental": false,
@@ -1641,7 +2890,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/configs/resource.html",
-          "hash": "UOucsDIjXRSEjEdsvLQEhA=="
+          "hash": "/MRGZGz82Xx/HjQUXW8EeRo1VXnmomKstWKgF7gM/Bo="
         }
       },
       "is_incremental": false,
@@ -1653,7 +2902,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/configs/server.html",
-          "hash": "Tg08mnqPsVRLDLfK7JxgWg=="
+          "hash": "oWcgTr/v15rSmohI2nN/mV7MeV5f82GMwLMqoUPJyko="
         }
       },
       "is_incremental": false,
@@ -1665,19 +2914,31 @@
       "output": {
         ".html": {
           "relative_path": "articles/configs/stream.html",
-          "hash": "iyBJJvUCSzDaiV1M8AO+/g=="
+          "hash": "HZ0EnOXIRZ6OyfS7C8GjWCZcqZl+1wMyxmPPjCsP5Mc="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "articles/configs/toc.yml",
+      "type": "Conceptual",
+      "source_relative_path": "articles/connectprotocol.md",
       "output": {
         ".html": {
-          "relative_path": "articles/configs/toc.html",
-          "hash": "b3710UJ74GuhVvLKIBaJ0w=="
+          "relative_path": "articles/connectprotocol.html",
+          "hash": "yW8euDv0TaJ8KOKEW4jGvHWqJI6nRYx9zG+NjPx8mng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/console.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/console.html",
+          "hash": "InOBdlwObgP4un0276H5vEdwb0Do1cuBzo6LDrSk15Y="
         }
       },
       "is_incremental": false,
@@ -1689,7 +2950,46 @@
       "output": {
         ".html": {
           "relative_path": "articles/contributing.html",
-          "hash": "e/b9NYbKkhRd4uI1mOJWlw=="
+          "hash": "B6c/OCumsnxLQ8DC50vcu3WCf9YDl2qMndTXZzBbPY4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "articles/customlauncher.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/customlauncher.html",
+          "hash": "yCqyraSt4SMOV1CZh5b6tP04eosFekvI4YBNFvkngCw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/dimensions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/dimensions.html",
+          "hash": "K0fBf0ooNLilDAUVa4SXICe7CMth/6mMputtha1dPK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/earlyauth.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/earlyauth.html",
+          "hash": "BJOyUpxvrjeSs3KdcNvg8Tle1vPpJegWOansbBzztEU="
         }
       },
       "is_incremental": false,
@@ -1701,7 +3001,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/getting-started/index.html",
-          "hash": "5X/NA0hxWpmIQNFN2Wcotg=="
+          "hash": "bhgknT7vdUXBttY2Be/Z+Jqv8yx2JIIegdoIpE1XJ2g="
         }
       },
       "is_incremental": false,
@@ -1713,7 +3013,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/index.html",
-          "hash": "mkgSlle48Itk+986xh719g=="
+          "hash": "l35aP3HDcDrU98n9xuKrAuK6NXtHxNNEL6cp8oqgm84="
         }
       },
       "is_incremental": false,
@@ -1725,7 +3025,103 @@
       "output": {
         ".html": {
           "relative_path": "articles/logging.html",
-          "hash": "/Nqhbn4LguJSwDcj05JBDw=="
+          "hash": "svwo8yTXb6YnLk0Z+Xk8VKACimdbmvT6qtg/bPFKbOg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/master_list_api.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/master_list_api.html",
+          "hash": "UV7i7QuOGWu8Wd2IcNofN4xwLejYM3wQzs8O7Yei2Pk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/permissions.html",
+          "hash": "8ryqSR1ISEOTrQYDFLZLiekRGIrqZcA9AOaw5KNgR0E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/resources.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/resources.html",
+          "hash": "mcgl1EJn4gbrbrGJTLzVc2qf28evu9lnw3pZes9BeSU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/serverspecs.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/serverspecs.html",
+          "hash": "wjlt+JEtRKxjgic7QHT9AV08I7/1gVyWP8/lnCh5Kqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/streamermode.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/streamermode.html",
+          "hash": "419eKweb5dBYxNt5wC+cY5s6LPfexvDZYsyb+8i5lok="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/synchronization.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/synchronization.html",
+          "hash": "QiDBjMVxA2rmxn8wNuSmYeCQUMIPDXqPsk7KfefdkTE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/troubleshooting/client.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/troubleshooting/client.html",
+          "hash": "pPc6Yew6mXucMbOYwNO99+fm3r7ukgvxudSZEevCZKQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/troubleshooting/server.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/troubleshooting/server.html",
+          "hash": "lpxDwHWwPsUXRnW8RZkc8ceTLE8AJnam4FQyajGxCUA="
         }
       },
       "is_incremental": false,
@@ -1737,11 +3133,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/api/index.html",
-          "hash": "GNMjDIvwedjfAUq9LdfjVw=="
+          "hash": "zkew3psBU17QJy5SFYflQ1vBM0RSmm9xtv3nFMcgAgk="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1749,11 +3148,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/async-colshapes.html",
-          "hash": "ORYnOyQHQO/xvGwx/PGuMA=="
+          "hash": "9l1CJjPBPKMtqkvwg5DTsueK2X7F2W4Hj6LCftYvh/w="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1761,11 +3163,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/async.html",
-          "hash": "LaFg6TOrKQPK9GtONN5kuA=="
+          "hash": "+Qkl8aky8xkha07u6UmWQ9GGebAFYQh+5EBfqFkfyPc="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1773,11 +3178,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/build-in-events.html",
-          "hash": "HH4GtwQN6DTzMFyUCEYBmg=="
+          "hash": "UDJX/PMii+8vrNttGd5gpurICk4g8YWxSh8hoMIospo="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1785,11 +3193,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/checkpoints.html",
-          "hash": "s+xp9fUnkiBSZCeP+n4NxA=="
+          "hash": "B3mcYEtzoahRQ28dlc9FgBEtsSjOBre91ZePJsmkiBk="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1797,11 +3208,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/colshapes-example.html",
-          "hash": "bsTlM1vL3AJ/egizJGjMhw=="
+          "hash": "SoFenF0oWdEXg5qqu9QEPPbuzFtxMiUQDuEoZvDrKS4="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1809,11 +3223,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/create-resource.html",
-          "hash": "H3QmCetsJyg5GKL9gfRejg=="
+          "hash": "d66kIcs2mo5SMlQSsrsK96bZTbNBJUf1YoHu6jIVkNY="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1821,11 +3238,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/create-script.html",
-          "hash": "Q5HQdKetBobJxLE0QyOe4Q=="
+          "hash": "OXAS3tk2Y9Fga6UYetHCHvK0bw0WIqxktSEFGfMHOfo="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1833,11 +3253,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/custom-events.html",
-          "hash": "jWYVXSeDiJgBlJTj1/SY7g=="
+          "hash": "tL7MpNpBu6Vq4Hj2+P4nozry7gZWDKfTsh/AufQJ5QQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1845,11 +3268,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/entity-data.html",
-          "hash": "rfxRa2FM+cNhTT+DATnC3A=="
+          "hash": "1/zxan/Nf05xaMDaSZH3G5e2CmsoBxU/53FByu/SLu4="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1857,11 +3283,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/entity-factories.html",
-          "hash": "+2MW0ih4qKGg/fT9GQ0rtw=="
+          "hash": "0k+rQDkjiqem7b6AjmXEaxXHD33wspa9EL3ktagfHGk="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1869,11 +3298,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/entity-sync.html",
-          "hash": "E/LNXFln9FhgLxsP96gs0A=="
+          "hash": "lBwaW2tFQPulXu4VXJwKQ0VIp5UWXNT5cpaQq2/Ozqo="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1881,11 +3313,29 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/events.html",
-          "hash": "rTUDma6h0miyo7DiE/vOKA=="
+          "hash": "fVkNDnv7jFdJRDHVGJ6LFaE1ei8+fHx4AoihtK6N1FA="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "coreclr-module/docs/articles/explosion.md",
+      "output": {
+        ".html": {
+          "relative_path": "cs/articles/explosion.html",
+          "hash": "sb8UT4MwZtLA4x3Qhvh7npmBziRR62656b5Y/msEjcA="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1893,11 +3343,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/index.html",
-          "hash": "meNCVPkeKtLS6RWBjdSG6Q=="
+          "hash": "3JubmLOwPky2ufBiI2Ew/p1fPoqhe5yPRmyiihwRc20="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1905,11 +3358,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/interactions.html",
-          "hash": "LipouFr3llx6pzmQXxFYNw=="
+          "hash": "wC1gIbVJJ2NupidBhuoW87f08Gyo93IuE1xFydT8glI="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1917,11 +3373,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/internal_information.html",
-          "hash": "Cu+/4mYAc/UHA2g6qdOmxw=="
+          "hash": "B7DdFiC2sP9BAxcQzw8J411jivo/5tcAaBSP0n08k9U="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1929,11 +3388,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/loop-all.html",
-          "hash": "rNWsmUk1QPIQIuq8T6KagA=="
+          "hash": "2NUfaqkxEhqTyt4lfiZgu4BE7CJKxU56OsdyL8wQlBA="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1941,11 +3403,29 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player-communication.html",
-          "hash": "ZKzcjyUz9xYGjHBKKIKX/w=="
+          "hash": "UNySeQPvCcSTvYZjEN1mgvNPL9fVomWSz7F7eoDHxfU="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "coreclr-module/docs/articles/player_change_vehicle_seat.md",
+      "output": {
+        ".html": {
+          "relative_path": "cs/articles/player_change_vehicle_seat.html",
+          "hash": "IECGH9R+u0kx9K6K8Qc7KrQRVPKt/XH+mDM7nb6AqIA="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1953,11 +3433,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_connect.html",
-          "hash": "M8jw/3lh0fANJiSTL5dioA=="
+          "hash": "ZylPqLHAE3yVpmv5rIqfgDeuX5Z4rJFbHoafB+2XMMQ="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1965,11 +3448,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_damage.html",
-          "hash": "XejMMbyVXnDF7hGOHM7BQQ=="
+          "hash": "e6Q2/LHf3lGMCb2gMU6WyL+wfyh864I1s2EubZIwH80="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1977,11 +3463,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_death.html",
-          "hash": "vOxBet8F3v8hK62TbT41UA=="
+          "hash": "vKtOzNt07KQVejliDxexV6YMZUFhpglSUweLQKZU+Fs="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -1989,11 +3478,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_disconnect.html",
-          "hash": "fQmiUEa6Ag+0FcJGhv67pw=="
+          "hash": "1ZHUdaPjW5GSh4bOoTE1D4lLRSapCQhbOCeYak7G0sA="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2001,11 +3493,29 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_enter_vehicle.html",
-          "hash": "UJTTk3P8e5NQDKO8hBk3+Q=="
+          "hash": "N9abgIMPg/+4D1ZYq3wjAgrhSD+G/Ra2hwKcIa8hXDg="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "coreclr-module/docs/articles/player_entering_vehicle.md",
+      "output": {
+        ".html": {
+          "relative_path": "cs/articles/player_entering_vehicle.html",
+          "hash": "QUkVxsa0nuX7KHzJDTcKvlodMRXd4FSJbxlHc3fv8Ms="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2013,11 +3523,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_events.html",
-          "hash": "3NqGF2DFgG5KgQKM0ucLhg=="
+          "hash": "C3iehZ7BuPmQuqfBNUBaeOtES6hjZ989rUoNyqm8IDA="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2025,11 +3538,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_giveweapon.html",
-          "hash": "f9pxTal+FpJtwTdrreMFYA=="
+          "hash": "gmLemdFicxolDCWh4xZ3TpMQwa3JBuRhutLgXa6HbpE="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2037,11 +3553,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_leave_vehicle.html",
-          "hash": "yPe4jzza2A678kOananb1A=="
+          "hash": "zb1GNwJ/iAxi5F704XQMJJjJhSMi8nt2XhkhARqzvcg="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2049,11 +3568,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/player_weapon_change.html",
-          "hash": "7cjDYYPgMmGY0oDM2qur6w=="
+          "hash": "WjecEc9M7FOlzSu8yn2kHQ5iXf6YLtIdnO/2wLQya8c="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2061,11 +3583,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/resource-communication.html",
-          "hash": "XmmiyiqmU2LGRdjG24TY0A=="
+          "hash": "FXJl74sU/xsPnOcVhT1bM8ipSWmTaLfAw+mFcrb9D0Q="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2073,11 +3598,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/resource-initialization-order.html",
-          "hash": "gGPd6rMwkIrzzqf2gTRkgA=="
+          "hash": "MypLSduRl8dtmf0qOiFskO6/varJ7kZ8G2k0kNg+fbs="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2085,11 +3613,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/serialization.html",
-          "hash": "jhjrK5Qa2DJsIY2VXTXamA=="
+          "hash": "0svBO1rxkUCm6RTA8TwFfXVril2Ie4oM7En8hjRG73E="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2097,23 +3628,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/setup.html",
-          "hash": "xXsMIOR73J45MBFgZcKFbA=="
+          "hash": "iqDBS3sONG8n0/Wqo1qvu7HrM8gK7IJHGXnVTzxfLfU="
         }
       },
       "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "coreclr-module/docs/articles/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "cs/articles/toc.html",
-          "hash": "v9eQtaSUW5mhXA9hGnZiSg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2121,11 +3643,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/trace.html",
-          "hash": "WWzK2CKPKHSvObf7W0JPYA=="
+          "hash": "TLrib1hzQaC0Rhh3EwE1v+iFw5ymOuU2jEOIS46G7JY="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2133,11 +3658,29 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/vehicle_create.html",
-          "hash": "CxEjx5Zoyono2J5DSPoijQ=="
+          "hash": "j+9OZCPsZ0RIQvRuH+MCnaSx6JNffqhYsqUoPeOklf0="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "coreclr-module/docs/articles/vehicle_damage.md",
+      "output": {
+        ".html": {
+          "relative_path": "cs/articles/vehicle_damage.html",
+          "hash": "PgiIvNpVrKI45aGxWfcotsUJd5It6PlE/wvRdUviAqk="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2145,11 +3688,29 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/vehicle_destroy.html",
-          "hash": "v7/xN9G6BlkhM1X37/m6Vg=="
+          "hash": "BiDSnVyAj/187pw4d4si6fA7IHwKqqa+zvMovVtU/1s="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "coreclr-module/docs/articles/vehicle_events.md",
+      "output": {
+        ".html": {
+          "relative_path": "cs/articles/vehicle_events.html",
+          "hash": "QTmFusi2K5aSxPFSKcc4LlmDUsz7PUBgdy+cHpTlB5Q="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2157,11 +3718,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/voice.html",
-          "hash": "4rN3v8SgLlMrmw96WooXLA=="
+          "hash": "k+voDEqHa4ZFx3QzsmQ9V5Tz+5HXkWQuunHJQpC96pM="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Conceptual",
@@ -2169,11 +3733,14 @@
       "output": {
         ".html": {
           "relative_path": "cs/articles/weapon_damage.html",
-          "hash": "cDqXeuMy7EMhrY2It6rY+Q=="
+          "hash": "tV7J3yLT1NFOA2C1SETIlzpde+OCvNKrV2hIxZ/EuIs="
         }
       },
       "is_incremental": false,
-      "version": ""
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
     },
     {
       "type": "Resource",
@@ -2203,7 +3770,199 @@
       "output": {
         ".html": {
           "relative_path": "cs/index.html",
-          "hash": "lywM1mER1c1vp1Mr1THiRA=="
+          "hash": "qOhpbs0FBCG33nkqQdAY2ma9o8aAb9iHqYpq6vD7j04="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "csharp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/client/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/index.html",
+          "hash": "Yh2sohen4mA8q9AxDcEInYrVRN2yc/zqpI+2xQCEFc8="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "cpp-sdk/articles/client/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/toc.html",
+          "hash": "I8jSuHkozh+7KgJzaI4jIaBXS+pgyrn18iFfJhauuto="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/creating-resource.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/creating-resource.html",
+          "hash": "DG/IFiBgIqS/Ky/WUyTpfGBekGNzLETXGgn/bg6Phk4="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/creating-runtime.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/creating-runtime.html",
+          "hash": "OkGp2JLvEWgxM7KT4cc//niEdLasIfkfjt2STcc5Ddw="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/first-steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/first-steps.html",
+          "hash": "mwb5JTX3lsMBejD5kpzfq/XxkEAmOLqPCvfiZ4h7Ldg="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/handling-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/handling-events.html",
+          "hash": "1tPTB3ae6x93I1vJVmmBmZoysas+Uwi+P3Lb0ZgAdD4="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/index.html",
+          "hash": "JztYZMy5zeJSSvjU6HA97WGbxYH3JL60RnUPwmhyQLM="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/introduction.html",
+          "hash": "l4KNCSLYRDn4JGi3UvUn+K6Ntf7gPaqmY8HWiH1e/gg="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/modules-for-reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/modules-for-reference.html",
+          "hash": "c47Ol2ucMQerV0Q+XwOi+I8VNQQIdkq5eMz3IZ8nP5I="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/mvalues.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/mvalues.html",
+          "hash": "QpIR3iH/2S2ShPUmNDEVji8X1CiYxqwSWDg9+mFDxmU="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/refs.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/refs.html",
+          "hash": "U4h6UKx2DXHeG2/RlKNNlQOV81nugrHSiw5L3T/9myA="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cpp-sdk/articles/server/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/server/index.html",
+          "hash": "KYD8ijZjYD4QioG7yjU2a+oOciegTLTvdJgbwsoSuUE="
+        }
+      },
+      "is_incremental": false,
+      "version": "",
+      "langs": [
+        "cpp"
+      ]
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "cpp-sdk/articles/server/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/server/toc.html",
+          "hash": "I8jSuHkozh+7KgJzaI4jIaBXS+pgyrn18iFfJhauuto="
         }
       },
       "is_incremental": false,
@@ -2215,7 +3974,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ngHOG1C1TjFTpM8HE0GyPQ=="
+          "hash": "iVbpRWhCTam0akGSpBDxwT2Jq7c9b6ApAQ8y1nzNLDM="
         }
       },
       "is_incremental": false,
@@ -2227,7 +3986,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "cCKEX3oNUQL9E0JXDUzxbA=="
+          "hash": "RC5pU9y76YUB/Okkhdpcn/txsC+LmsQTEM/WvO1L9OY="
         }
       },
       "is_incremental": false,
@@ -2244,10 +4003,11 @@
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
+          "details": "Processor ConceptualDocumentProcessor cannot support incremental build because the following steps don't implement ISupportIncrementalBuildStep interface: CommonBuildStep.",
           "incrementalPhase": "build",
-          "total_file_count": 68,
-          "skipped_file_count": 68
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

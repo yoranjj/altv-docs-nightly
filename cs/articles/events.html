@@ -9,7 +9,7 @@
     <title>Events </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Events ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../styles/discord.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -50,12 +50,6 @@
                     </div>
 
 
-                    <div class="sidebar-item-separator"></div>
-
-                        
-                        <div id="sidetoggle">
-                          <div id="sidetoc"></div>
-                        </div>
 
                 </div>
 
@@ -113,7 +107,7 @@
                     <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search">
+                            <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
                               <div class="bs-docs-sidebar affix" id="affix">
                                 <div></div>
@@ -131,10 +125,10 @@
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="">
 
-                                <span class="small pull-right article mobile-hide" style="margin: 0;">
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module//blob/master/docs/articles/events.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/events.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
@@ -186,6 +180,12 @@ namespace AltV.Net
         {
             add =&gt; Module.PlayerConnectEventHandler.Add(value);
             remove =&gt; Module.PlayerConnectEventHandler.Remove(value);
+        }
+
+        public static event PlayerBeforeConnectDelegate OnPlayerBeforeConnect
+        {
+            add =&gt; Module.PlayerBeforeConnectEventHandler.Add(value);
+            remove =&gt; Module.PlayerBeforeConnectEventHandler.Remove(value);
         }
 
         public static event ResourceEventDelegate OnAnyResourceStart
@@ -270,7 +270,7 @@ namespace AltV.Net
             add =&gt; Module.PlayerEnterVehicleEventHandler.Add(value);
             remove =&gt; Module.PlayerEnterVehicleEventHandler.Remove(value);
         }
-        
+
         public static event PlayerEnteringVehicleDelegate OnPlayerEnteringVehicle
         {
             add =&gt; Module.PlayerEnteringVehicleEventHandler.Add(value);
@@ -362,23 +362,29 @@ namespace AltV.Net
             add =&gt; Module.PlayerWeaponChangeEventHandler.Add(value);
             remove =&gt; Module.PlayerWeaponChangeEventHandler.Remove(value);
         }
-        
+
         public static event NetOwnerChangeDelegate OnNetworkOwnerChange
         {
             add =&gt; Module.NetOwnerChangeEventHandler.Add(value);
             remove =&gt; Module.NetOwnerChangeEventHandler.Remove(value);
         }
-        
+
         public static event VehicleAttachDelegate OnVehicleAttach
         {
             add =&gt; Module.VehicleAttachEventHandler.Add(value);
             remove =&gt; Module.VehicleAttachEventHandler.Remove(value);
         }
-        
+
         public static event VehicleDetachDelegate OnVehicleDetach
         {
             add =&gt; Module.VehicleDetachEventHandler.Add(value);
             remove =&gt; Module.VehicleDetachEventHandler.Remove(value);
+        }
+
+        public static event VehicleDamageDelegate OnVehicleDamage
+        {
+            add =&gt; Module.VehicleDamageEventHandler.Add(value);
+            remove =&gt; Module.VehicleDamageEventHandler.Remove(value);
         }
     }
 }
@@ -387,7 +393,6 @@ namespace AltV.Net
 <pre><code class="lang-csharp" name="Events">using AltV.Net.Data;
 using AltV.Net.Elements.Args;
 using AltV.Net.Elements.Entities;
-using AltV.Net.Native;
 
 namespace AltV.Net.Events
 {
@@ -396,10 +401,12 @@ namespace AltV.Net.Events
     public delegate void ClientEventDelegate(IPlayer player, object[] args);
 
     public delegate void PlayerConnectDelegate(IPlayer player, string reason);
-    
+
+    public delegate bool PlayerBeforeConnectDelegate(IPlayer player, ulong passwordHash, string cdnUrl);
+
     public delegate void ResourceEventDelegate(INativeResource resource);
 
-    public delegate void PlayerDamageDelegate(IPlayer player, IEntity attacker, uint weapon, ushort damage);
+    public delegate void PlayerDamageDelegate(IPlayer player, IEntity attacker, uint weapon, ushort healthDamage, ushort armourDamage);
 
     public delegate void PlayerDeadDelegate(IPlayer player, IEntity killer, uint weapon);
 
@@ -438,20 +445,22 @@ namespace AltV.Net.Events
 
     public delegate bool WeaponDamageDelegate(IPlayer player, IEntity target, uint weapon, ushort damage,
         Position shotOffset, BodyPart bodyPart);
-    
+
     public delegate void VehicleDestroyDelegate(IVehicle vehicle);
-    
+
     public delegate bool FireDelegate(IPlayer player, FireInfo[] fireInfos);
-    
+
     public delegate bool StartProjectileDelegate(IPlayer player, Position startPosition, Position direction, uint ammoHash, uint weaponHash);
-    
+
     public delegate bool PlayerWeaponChangeDelegate(IPlayer player, uint oldWeapon, uint newWeapon);
-    
+
     public delegate void NetOwnerChangeDelegate(IEntity target, IPlayer oldNetOwner, IPlayer newNetOwner);
-    
+
     public delegate void VehicleAttachDelegate(IVehicle target, IVehicle attachedVehicle);
-    
+
     public delegate void VehicleDetachDelegate(IVehicle target, IVehicle detachedVehicle);
+
+    public delegate void VehicleDamageDelegate(IVehicle target, IEntity attacker, uint bodyHealthDamage, uint additionalBodyHealthDamage, uint engineHealthDamage, uint petrolTankDamage, uint weaponHash);
 }
 </code></pre>
 <p>The player event handler looks like this.</p>
@@ -478,6 +487,8 @@ namespace AltV.Net.Events
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../styles/docfx.js"></script>
 <script type="text/javascript" src="../../styles/discord.js"></script>
 <script type="text/javascript" src="../../styles/main.js"></script>

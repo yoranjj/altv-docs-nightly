@@ -9,7 +9,7 @@
     <title>Logging in alt:V </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Logging in alt:V ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
@@ -49,8 +49,6 @@
                     
                     </div>
 
-
-                    <div class="sidebar-item-separator"></div>
 
 
                 </div>
@@ -109,7 +107,7 @@
                     <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search">
+                            <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
                               <div class="bs-docs-sidebar affix" id="affix">
                                 <div></div>
@@ -127,7 +125,7 @@
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="">
 
-                                <span class="small pull-right article mobile-hide" style="margin: 0;">
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
                                                 <a href="https://github.com/altmp/altv-docs/blob/master/articles/logging.md/#L1">Improve this Doc</a>
@@ -251,12 +249,24 @@ You can see a list of all color codes in the table below:</p>
 </table>
 <h2 id="using-logs-in-your-code">Using logs in your code</h2>
 <p>Here you can find small examples in the different programming languages alt:V offers on how to use logging:</p>
-<p><strong>JavaScript / Lua</strong></p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Javascript</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-2" data-tab="tabid-2" tabindex="-1">C#</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
+
 <pre><code class="lang-js">alt.log(&quot;~r~Hello ~g~World!&quot;);
 alt.logWarning(&quot;This is a warning&quot;);
 alt.logError(&quot;This is an error&quot;);
 </code></pre>
-<p><strong>C#</strong></p>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
+
 <pre><code class="lang-csharp">ColoredMessage coloredMessage = new ColoredMessage();
 coloredMessage += TextColor.Red;
 coloredMessage += &quot;Hello &quot;;
@@ -268,6 +278,8 @@ Alt.LogError(&quot;This is an error&quot;);
 Alt.LogInfo(&quot;This is an info&quot;);
 Alt.LogDebug(&quot;This is a debug message&quot;);
 </code></pre>
+</section>
+</div>
 </article>
                     </div>
 
@@ -287,6 +299,8 @@ Alt.LogDebug(&quot;This is a debug message&quot;);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../styles/docfx.js"></script>
 <script type="text/javascript" src="../styles/discord.js"></script>
 <script type="text/javascript" src="../styles/main.js"></script>

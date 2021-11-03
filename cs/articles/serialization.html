@@ -9,7 +9,7 @@
     <title>Serialization </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Serialization ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../styles/discord.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -50,12 +50,6 @@
                     </div>
 
 
-                    <div class="sidebar-item-separator"></div>
-
-                        
-                        <div id="sidetoggle">
-                          <div id="sidetoc"></div>
-                        </div>
 
                 </div>
 
@@ -113,7 +107,7 @@
                     <div class="content-column Conceptual">
 
                             
-                            <div class="sideaffix hide-when-search">
+                            <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
                               <div class="bs-docs-sidebar affix" id="affix">
                                 <div></div>
@@ -131,10 +125,10 @@
 
                         <article class="content wrap hide-when-search" id="_content" data-uid="">
 
-                                <span class="small pull-right article mobile-hide" style="margin: 0;">
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module//blob/master/docs/articles/serialization.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/serialization.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
@@ -242,6 +236,36 @@ This only works when you can edit the class you want to send, because you need t
    ]
 }
 </code></pre>
+<h3 id="step-5">Step 5</h3>
+<p>To send arrays without keys its the same logic.</p>
+<pre><code class="lang-csharp">public class MyClass3 : IWritable
+{
+    public void OnWrite(IMValueWriter writer)
+    {
+        writer.BeginObject(); // We tell the writer to create a object.
+          writer.Name(&quot;myInts&quot;); // We tell the writer the next attribute of the object has the name 'myInts'.
+          writer.BeginArray(); // We tell the writer the value for the attribute 'myInts' is a array.
+            for (int i = 0;i &lt; 3;i++ {
+                writer.Value(i); // We add the value to the array 'myInts'
+            }
+          writer.EndArray(); // We tell the writer we are done creating the array
+        writer.EndObject(); // We tell the writer that we are done creating the object.
+    }
+}
+</code></pre>
+<p>Now you can just send a instance of the class.</p>
+<pre><code class="lang-csharp">player.Emit(&quot;myEventName&quot;, new MyClass3());
+</code></pre>
+<p>This will result in the following js output</p>
+<pre><code class="lang-js">alt.onServer(&quot;myEventName&quot;, (myClass) =&gt; {
+    alt.log(JSON.stringify(myClass));
+    alt.log(myClass.myInts.length); // 3
+})
+// Console:
+{
+   &quot;myInts&quot;:[0,1,2]
+}
+</code></pre>
 </article>
                     </div>
 
@@ -261,6 +285,8 @@ This only works when you can edit the class you want to send, because you need t
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../styles/docfx.js"></script>
 <script type="text/javascript" src="../../styles/discord.js"></script>
 <script type="text/javascript" src="../../styles/main.js"></script>

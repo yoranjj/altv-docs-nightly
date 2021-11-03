@@ -24,14 +24,14 @@ const filterKeywords = {
 const filterRegex = new RegExp("(\\w+):\\s*(\\w+)?", "gi")
 
 const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-switchTheme(darkThemeMq.matches);
+switchTheme();
 
 var query;
 var worker;
 var relHref;
 
 $(document).ready(function() {
-  darkThemeMq.addEventListener("change", switchTheme);
+  darkThemeMq.addEventListener("change", switchTheme());
   highlight();
   renderAffix();
   renderTabs();
@@ -40,7 +40,17 @@ $(document).ready(function() {
   $("a:not([data-tab])").off("click").on("click", delegateAnchors);
   $(".blackout").on("click", toggleMenu);
   $(".navbar-toggler").on("click", toggleMenu);
+  $("body").on("searchEvent", function() {
+    $("#navbar .nav > li > .expand-stub").unbind("click").click(function(ev) {
+      $(ev.target).parent().toggleClass("in");
+    });
+    $("#navbar .nav > li > .expand-stub + a:not([href])").unbind("click").click(function(ev) {
+      $(ev.target).parent().toggleClass("in");
+    });
+    $("#navbar .nav").parents("li.active").addClass("in");
+  });
 });
+
 $(window).on("load hashchange", function() {
   scrollIfAnchor(window.location.hash);
 });
@@ -71,12 +81,27 @@ function enableSearch() {
     return;
   }
   try {
-    worker = new Worker(relHref + "styles/search-worker.js");
-    if (!worker && !window.worker) {
-      localSearch();
-    } else {
-      webWorkerSearch(worker);
-    }
+    var searchData = {};
+    var lunrIndex;
+    $.get(relHref + "search-index.json", resp => {
+      lunrIndex = lunr.Index.load(JSON.parse(resp));
+      $.get(relHref + "index.json", resp => {
+        searchData = JSON.parse(resp);
+      });
+    });
+
+    $("body").bind("queryReady", function() {
+      var hits = lunrIndex.search(query.split(/\s+/g).map(term => {
+          return !term.startsWith('-') ? (!term.startsWith('+') ? '+' + term : term.substring(1)) : term;
+        }).join(' '));
+      var results = [];
+      hits.sort((a, b) => (searchData[a.ref].type > searchData[b.ref].type) - (searchData[a.ref].type < searchData[b.ref].type));
+      hits.forEach(function(hit) {
+        var item = searchData[hit.ref];
+        results.push(searchData[hit.ref]);
+      });
+      handleSearchResults(results);
+    });
 
     for (const key of Object.keys(filterKeywords)) {
       $("#search-menu").append("<div class=\"option\"><span class=\"filter\">"
@@ -90,74 +115,6 @@ function enableSearch() {
   } catch (e) {
     console.error(e);
   }
-}
-
-// Search factory
-function localSearch() {
-  console.debug("using local search");
-  var lunrIndex = lunr(function() {
-    this.ref("href");
-    this.field("type", { boost: 100 });
-    this.field("title", { boost: 50 });
-    this.field("keywords", { boost: 25 });
-    this.field("langs", { boost: 75 });
-  });
-  lunr.tokenizer.seperator = /[\s\-\.]+/;
-  var searchData = {};
-  var searchDataRequest = new XMLHttpRequest();
-
-  var indexPath = relHref + "index.json";
-  if (indexPath) {
-    searchDataRequest.open("GET", indexPath);
-    searchDataRequest.onload = function() {
-      if (this.status != 200) {
-        return;
-      }
-      searchData = JSON.parse(this.responseText);
-      for (var prop in searchData) {
-        if (searchData.hasOwnProperty(prop)) {
-          lunrIndex.add(searchData[prop]);
-        }
-      }
-    }
-    searchDataRequest.send();
-  }
-
-  $("body").bind("queryReady", function() {
-    var hits = lunrIndex.search(query);
-    var results = [];
-    hits.forEach(function(hit) {
-      var item = searchData[hit.ref];
-      results.push({ "type": item.type, "href": item.href, "title": item.title, "keywords": item.keywords, "langs": item.langs });
-    });
-    handleSearchResults(results);
-  });
-}
-
-function webWorkerSearch() {
-  console.debug("using Web Worker");
-  var indexReady = $.Deferred();
-
-  worker.onmessage = function(oEvent) {
-    switch (oEvent.data.e) {
-      case "index-ready":
-        indexReady.resolve();
-        break;
-      case "query-ready":
-        var hits = oEvent.data.d;
-        handleSearchResults(hits);
-        break;
-    }
-  }
-
-  indexReady.promise().done(function() {
-    $("body").bind("queryReady", function() {
-      worker.postMessage({ q: query });
-    });
-    if (query && (query.length >= 3)) {
-      worker.postMessage({ q: query });
-    }
-  });
 }
 
 function addSearchEvent() {
@@ -245,6 +202,10 @@ function addSearchEvent() {
       localStorage.setItem("theme", selTheme);
     }
     switchTheme();
+    $("#theme-menu").removeClass("active");
+  });
+  $(document).click(function(ev) {
+    if ($(ev.target).is("#theme-menu") || $(ev.target).is(".btn-link.theme")) return;
     $("#theme-menu").removeClass("active");
   });
   $(window).on("resize", function() {
@@ -399,14 +360,38 @@ function handleSearchResults(hits) {
             return itemNode;
           })
         );
-        query.split(/\s+/).forEach(function (word) {
-          if (word !== "") {
-            $("#search-results > .sr-items *").mark(word);
+        convertQueryIntoWords(query).forEach(function (word) {
+          const options = {
+            accuracy: {
+              "value": "exactly",
+              "limiters": ":;.,-–—‒_(){}[]!'\"+=".split(""),
+            },
+            separateWordSearch: false,
+            wildcards: "enabled",
+            ignorePunctuation: ":;.,-–—‒_(){}[]!'\"+=".split(""),
+          };
+          if (word.startsWith("title:")) {
+            $("#search-results > .sr-items .item-title").mark(word.substring(6), options);
+          } else {
+            $("#search-results > .sr-items *").mark(word, options);
           }
         });
       }
     });
   }
+}
+
+function convertQueryIntoWords(query) {
+  return query.split(/\s+/g).map(term => {
+    if (term === "" || term.startsWith('-')) return null;
+    const keyword = term.split(':')[0];
+    const hasKeyword = Object.keys(filterKeywords).includes(keyword);
+    if (hasKeyword && keyword !== "title") return null;
+    // if (hasKeyword) {
+    //   term = term.substring(keyword.length + 1);
+    // }
+    return term.split('^')[0].split('~')[0].replace("+", "");
+  }).filter(word => word != null);
 }
 
 function relativeUrlToAbsoluteUrl(currentUrl, relativeUrl) {
@@ -426,7 +411,7 @@ function relativeUrlToAbsoluteUrl(currentUrl, relativeUrl) {
 
 function extractContentBrief(content) {
   var briefOffset = 512;
-  var words = query.split(/\s+/g);
+  var words = convertQueryIntoWords(query).filter(word => !word.startsWith("title:"));
   var queryIndex = content.indexOf(words[0]);
   var briefContent;
   if (queryIndex > briefOffset) {
@@ -438,6 +423,7 @@ function extractContentBrief(content) {
 
 function highlight() {
   $("code.hljs").each(function(i, block) {
+    if ($(block).parent().closest(".nohljsln").length) return;
     hljs.lineNumbersBlock(block);
   });
 }
@@ -518,11 +504,26 @@ function renderAffix() {
     el.find(".affix").html(formList(tree, ["nav", "bs-docs-sidenav"]));
   }
 
+  function getStackDepth(stack) {
+    let level = 1;
+    if (!stack) return level;
+    for (const el of stack) {
+      if (!el.children.length) continue;
+      let depth = getStackDepth(el.children) + 1;
+      level = Math.max(depth, level);
+    }
+    return level;
+  }
+
   function traverseArticle() {
-    const isConceptual = $(".content-column").hasClass("Conceptual");
-    let headers = $(["h1", "h2", "h3", "h4"].map(el => "article.content " + el).join(", "));
-    let stack = [];
-    let curr = {};
+    const headers = $(["h1", "h2", "h3", "h4"].map(el => "article.content " + el).join(", "));
+    const stack = [
+      {
+        children: [],
+        type: 'H0',
+      }
+    ];
+    let curr = stack[0];
     headers.each(function () {
       const el = $(this);
       const xref = el.children().length > 1 ? el.children().last() : null;
@@ -532,25 +533,26 @@ function renderAffix() {
         id: el.prop("id"),
         name: htmlEncode(el.text()),
         href: xref?.hasClass("xref") ? xref.prop("href") : "#" + el.prop("id"),
-        children: []
+        children: [],
       };
-      if (!stack.length) {
-        stack.push(curr = obj);
-        return;
-      }
-      if (obj.type === stack[stack.length - 1].type) {
-        stack.push(curr = obj);
-      } else if (obj.type > curr.type) {
-        curr.children.push(curr = obj);
-      } else if (obj.type < curr.type) {
-        obj.parent = curr.parent.parent;
-        curr.parent.parent.children.push(curr = obj);
-      } else {
-        curr.parent.children.push(obj);
+
+      switch((obj.type > curr.type) - (obj.type < curr.type)) {
+        case 0:
+          obj.parent = curr.parent;
+          curr.parent.children.push(curr = obj);
+          break;
+        case -1:
+          let p = curr.parent;
+          while (p.type >= obj.type) p = p.parent;
+          p.children.push(curr = obj);
+          break;
+        case 1:
+          curr.children.push(curr = obj);
+          break;
       }
     });
 
-    return stack.length && !isConceptual ? stack[0].children : stack;
+    return stack[0].children && !$(".content-column").hasClass('Conceptual') ? stack[0].children[0].children : stack[0].children;
   }
 
   function formList(item, classes) {
