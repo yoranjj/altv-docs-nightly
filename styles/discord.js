@@ -83,10 +83,10 @@ function enableSearch() {
   try {
     var searchData = {};
     var lunrIndex;
-    $.get(relHref + "search-index.json", resp => {
-      lunrIndex = lunr.Index.load(JSON.parse(resp));
-      $.get(relHref + "index.json", resp => {
-        searchData = JSON.parse(resp);
+    $.getJSON(relHref + "search-index.json", resp => {
+      lunrIndex = lunr.Index.load(resp);
+      $.getJSON(relHref + "index.json", resp => {
+        searchData = resp;
       });
     });
 
