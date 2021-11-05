@@ -129,8 +129,12 @@ function addSearchEvent() {
         flipContents("show");
       } else if (isSearchQueryValid(this)) {
         flipContents("hide");
-        $("body").trigger("queryReady");
         $("#search-results > .search-list > span").text("\"" + query + "\"");
+        $("body").trigger("queryReady");
+      } else {
+         flipContents("hide");
+         $("#search-results > .search-list > span").text("\"" + query + "\"");
+         $("#search-results > .sr-items").html("<p>Invalid search query</p>");
       }
     });
   });
@@ -239,7 +243,7 @@ function addSearchKeyword(el) {
   let str = $(el).text();
   for (const word of str.matchAll(filterRegex)) {
     if (Object.keys(filterKeywords).indexOf(word[1]) === -1) continue;
-    str = str.replaceAll(word[1] + ":", "<span class=\"keyword " + word[1] + "\">" + word[1] + ":</span>");
+    str = str.replaceAll(/(\w+):([^\s]*)/g, "<span class=\"keyword $1\">$1:$2</span>");
   }
   $(el).html(str).trigger("keydown");
 }
