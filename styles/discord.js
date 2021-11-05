@@ -26,6 +26,8 @@ const filterRegex = new RegExp("(\\w+):\\s*(\\w+)?", "gi")
 const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
 switchTheme();
 
+$.ajaxSetup({ mimeType: "text/plain" });
+
 var query;
 var worker;
 var relHref;
@@ -299,21 +301,12 @@ function isChildOf(node, parentNode) {
 
 function getCurrentCursorPosition(el) {
   const selection = window.getSelection();
-  let charCount = -1;
-  let node = selection.focusNode;
-  if (!node || !isChildOf(node, el)) return charCount; 
-  charCount = selection.focusOffset;
-  while (node) {
-    if (node.id === el.id) break;
-    if (node.previousSibling) {
-      node = node.previousSibling;
-      charCount += node.textContent.length;
-    } else {
-      node = node.parentNode;
-      if (node === null) break;
-    }
-  }
-  return charCount;
+  if (selection.rangeCount <= 0) return 0;
+  var range = selection.getRangeAt(0);
+  var preCaretRange = range.cloneRange();
+  preCaretRange.selectNodeContents(el);
+  preCaretRange.setEnd(range.endContainer, range.endOffset);
+  return preCaretRange.toString().length;
 }
 
 function setCurrentCursorPosition(el, offset) {
@@ -348,7 +341,7 @@ function handleSearchResults(hits) {
           curHits.map(function (hit) {
             var currentUrl = window.location.href;
             var itemRawHref = relativeUrlToAbsoluteUrl(currentUrl, relHref + hit.href);
-            var itemHref = relHref + hit.href + "?q=" + query;
+            var itemHref = relHref + hit.href + "?q=" + encodeURIComponent(query);
             var itemTitle = hit.title;
             var itemBrief = extractContentBrief(hit.keywords);
 

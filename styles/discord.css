@@ -839,6 +839,7 @@ code tr > td:first-child
     height: 100%;
     padding: 1px 0;
     margin-left: -4px;
+    white-space: pre;
     font-size: 15px;
     overflow: hidden;
     background: none;
