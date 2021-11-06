@@ -243,7 +243,7 @@ function addSearchKeyword(el) {
   let str = $(el).text();
   for (const word of str.matchAll(filterRegex)) {
     if (Object.keys(filterKeywords).indexOf(word[1]) === -1) continue;
-    str = str.replaceAll(/(\w+):([^\s]*)/g, "<span class=\"keyword $1\">$1:$2</span>");
+    str = str.replaceAll(new RegExp("(" + Object.keys(filterKeywords).join('|') + "):([^\\s]*)", 'g'), "<span class=\"keyword $1\">$1:$2</span>");
   }
   $(el).html(str).trigger("keydown");
 }
