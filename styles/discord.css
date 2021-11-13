@@ -1,7 +1,3 @@
-.modal {
-    background: var(--sidebar-bg-color);
-}
-
 /* Discord Style */
 
 ::-webkit-scrollbar
@@ -1621,7 +1617,7 @@ ul.level2.bs-docs-sidenav::before
     box-shadow: 1px 0 0 var(--code-bg-color);
 }
 
-.tabGroup ul[role="tablist"] > li.active.code:last-child:not(:first-child) 
+.tabGroup ul[role="tablist"] > li.active.code:last-child:not(:first-child)
 {
     background: var(--code-bg-color);
     box-shadow: -1px 0 0 var(--code-bg-color);
@@ -1674,4 +1670,11 @@ ul.level2.bs-docs-sidenav::before
     display: flex;
     justify-content: center;
     background-color: unset !important;
+}
+
+/* Image modal */
+
+.modal
+{
+    background: var(--sidebar-bg-color);
 }

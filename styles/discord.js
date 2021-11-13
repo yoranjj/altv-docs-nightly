@@ -370,7 +370,7 @@ function handleSearchResults(hits) {
             var itemRawHref = relativeUrlToAbsoluteUrl(currentUrl, relHref + hit.href);
             var itemHref = relHref + hit.href + "?q=" + encodeURIComponent(query);
             var itemTitle = hit.title;
-            var itemBrief = extractContentBrief(hit.keywords);
+            var itemBrief = extractContentBrief(hit.keyword);
 
             var itemNode = $("<div>").attr("class", "sr-item");
             var itemTitleNode = $("<div>").attr("class", "item-title").append($("<a>").attr("href", itemHref).attr("target", "_blank").text(itemTitle));
@@ -406,7 +406,7 @@ function convertQueryIntoWords(query) {
     if (term === "" || term.startsWith('-')) return null;
     const keyword = term.split(':')[0];
     const hasKeyword = getFilterKeywords().includes(keyword);
-    if (hasKeyword && keyword !== "title" && keyword !== "keywords") return null;
+    if (hasKeyword && keyword !== "title" && keyword !== "keyword") return null;
     // if (hasKeyword) { term = term.substring(keyword.length + 1); }
     return term.split('^')[0].split('~')[0].replace("+", "");
   }).filter(word => word != null);
@@ -429,7 +429,7 @@ function relativeUrlToAbsoluteUrl(currentUrl, relativeUrl) {
 
 function extractContentBrief(content) {
   var briefOffset = 512;
-  var words = convertQueryIntoWords(query).filter(word => !word.startsWith("title:") && !word.startsWith("keywords:"));
+  var words = convertQueryIntoWords(query).filter(word => !word.startsWith("title:") && !word.startsWith("keyword:"));
   var queryIndex = content.indexOf(words[0]);
   var briefContent;
   if (queryIndex > briefOffset) {
