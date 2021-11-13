@@ -15,6 +15,7 @@
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
@@ -80,6 +81,7 @@
                               <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
                             </form>
                             <div class="popout" id="search-menu">
+                              <button class="btn-link search-help"></button>
                               <span class="title">
                                 Search options:
                               </span>
@@ -496,7 +498,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_clearPedProp.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.clearPedProp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2085">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2098">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_clearPedProp" data-uid="@altmp/altv-types.alt-client.clearPedProp">clearPedProp(number, number)
         <span class="release-stage public"></span>
@@ -625,7 +627,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_doesConfigFlagExist.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.doesConfigFlagExist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1823">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1836">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_doesConfigFlagExist" data-uid="@altmp/altv-types.alt-client.doesConfigFlagExist">doesConfigFlagExist(string)
         <span class="release-stage public"></span>
@@ -775,10 +777,59 @@ This handling applies to particular vehicle instance, as opposed to the <a class
         </table>
         <span class="small pull-right mobile-hide" data-noindex="">
           <span class="divider">|</span>
+          <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_emitServerRaw.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.emitServerRaw%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+        </span>
+        <span class="small pull-right mobile-hide">
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1577">View Source</a>
+        </span>
+        <h4 id="_altmp_altv_types_alt_client_emitServerRaw" data-uid="@altmp/altv-types.alt-client.emitServerRaw">emitServerRaw(string, any[])
+        <span class="release-stage alpha"></span>
+  </h4>
+        <div class="markdown level1 summary"><p>Emits specified event to server.</p>
+</div>
+        <div class="markdown level1 conceptual"></div>
+        <h5 class="decalaration">Declaration</h5>
+        <div class="codewrapper">
+          <pre><code class="lang-typeScript hljs">emitServerRaw(name: string, ...args: any[]): void</code></pre>
+        </div>
+        <h5 class="parameters">Parameters</h5>
+        <table class="table table-bordered table-striped table-condensed">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="xref">string</span></td>
+              <td><em>name</em></td>
+              <td>
+                
+                
+              </td>
+            </tr>
+            <tr>
+              <td><span class="xref">any[]</span></td>
+              <td><em>args</em></td>
+              <td>
+                <p>Rest parameters for emit to send.</p>
+
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 id="_altmp_altv_types_alt_client_emitServerRaw_remarks">Remarks</h5>
+        <div class="markdown level1 remarks"><p>Works only from JS (Client) to JS (Server)</p>
+</div>
+        <span class="small pull-right mobile-hide" data-noindex="">
+          <span class="divider">|</span>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_evalModule.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.evalModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2002">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2015">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_evalModule" data-uid="@altmp/altv-types.alt-client.evalModule">evalModule(string)
         <span class="release-stage public"></span>
@@ -893,7 +944,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_gameControlsEnabled.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.gameControlsEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1569">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1582">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_gameControlsEnabled" data-uid="@altmp/altv-types.alt-client.gameControlsEnabled">gameControlsEnabled()
         <span class="release-stage public"></span>
@@ -927,7 +978,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getConfigFlag.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getConfigFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1815">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1828">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getConfigFlag" data-uid="@altmp/altv-types.alt-client.getConfigFlag">getConfigFlag(ConfigFlag)
         <span class="release-stage public"></span>
@@ -983,7 +1034,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getCursorPos.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getCursorPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1574">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1587">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getCursorPos" data-uid="@altmp/altv-types.alt-client.getCursorPos">getCursorPos()
         <span class="release-stage public"></span>
@@ -1017,7 +1068,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getEventListeners.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getEventListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2010">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2023">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getEventListeners" data-uid="@altmp/altv-types.alt-client.getEventListeners">getEventListeners(string | null)
         <span class="release-stage public"></span>
@@ -1073,7 +1124,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getGxtText.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getGxtText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1581">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1594">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getGxtText" data-uid="@altmp/altv-types.alt-client.getGxtText">getGxtText(string)
         <span class="release-stage public"></span>
@@ -1128,7 +1179,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getHeadshotBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getHeadshotBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2054">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2067">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getHeadshotBase64" data-uid="@altmp/altv-types.alt-client.getHeadshotBase64">getHeadshotBase64(number)
         <span class="release-stage public"></span>
@@ -1187,7 +1238,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getLicenseHash.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getLicenseHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1583">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1596">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getLicenseHash" data-uid="@altmp/altv-types.alt-client.getLicenseHash">getLicenseHash()
         <span class="release-stage public"></span>
@@ -1220,7 +1271,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getLocale.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getLocale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1588">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1601">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getLocale" data-uid="@altmp/altv-types.alt-client.getLocale">getLocale()
         <span class="release-stage public"></span>
@@ -1310,7 +1361,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getMsPerGameMinute.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getMsPerGameMinute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1595">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1608">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getMsPerGameMinute" data-uid="@altmp/altv-types.alt-client.getMsPerGameMinute">getMsPerGameMinute()
         <span class="release-stage public"></span>
@@ -1347,7 +1398,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getPermissionState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getPermissionState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1603">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1616">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getPermissionState" data-uid="@altmp/altv-types.alt-client.getPermissionState">getPermissionState(Permission)
         <span class="release-stage public"></span>
@@ -1403,7 +1454,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getRemoteEventListeners.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getRemoteEventListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2018">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2031">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getRemoteEventListeners" data-uid="@altmp/altv-types.alt-client.getRemoteEventListeners">getRemoteEventListeners(string | null)
         <span class="release-stage public"></span>
@@ -1459,7 +1510,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_getStat.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.getStat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1610">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1623">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_getStat" data-uid="@altmp/altv-types.alt-client.getStat">getStat(StatName)
         <span class="release-stage public"></span>
@@ -1792,7 +1843,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isConsoleOpen.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isConsoleOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1617">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1630">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isConsoleOpen" data-uid="@altmp/altv-types.alt-client.isConsoleOpen">isConsoleOpen()
         <span class="release-stage public"></span>
@@ -1827,7 +1878,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isGameFocused.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isGameFocused%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1624">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1637">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isGameFocused" data-uid="@altmp/altv-types.alt-client.isGameFocused">isGameFocused()
         <span class="release-stage public"></span>
@@ -1862,7 +1913,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isInStreamerMode.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isInStreamerMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1631">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1644">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isInStreamerMode" data-uid="@altmp/altv-types.alt-client.isInStreamerMode">isInStreamerMode()
         <span class="release-stage public"></span>
@@ -1897,7 +1948,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isKeyDown.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isKeyDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1645">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1658">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isKeyDown" data-uid="@altmp/altv-types.alt-client.isKeyDown">isKeyDown(number)
         <span class="release-stage public"></span>
@@ -1951,7 +2002,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isKeyToggled.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isKeyToggled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1638">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1651">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isKeyToggled" data-uid="@altmp/altv-types.alt-client.isKeyToggled">isKeyToggled(number)
         <span class="release-stage public"></span>
@@ -2006,7 +2057,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isMenuOpen.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isMenuOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1652">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1665">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isMenuOpen" data-uid="@altmp/altv-types.alt-client.isMenuOpen">isMenuOpen()
         <span class="release-stage public"></span>
@@ -2041,7 +2092,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_isTextureExistInArchetype.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.isTextureExistInArchetype%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1654">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1667">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_isTextureExistInArchetype" data-uid="@altmp/altv-types.alt-client.isTextureExistInArchetype">isTextureExistInArchetype(number, string)
         <span class="release-stage public"></span>
@@ -2102,7 +2153,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_loadModel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.loadModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1661">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1674">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_loadModel" data-uid="@altmp/altv-types.alt-client.loadModel">loadModel(number)
         <span class="release-stage public"></span>
@@ -2142,7 +2193,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_loadModelAsync.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.loadModelAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1668">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1681">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_loadModelAsync" data-uid="@altmp/altv-types.alt-client.loadModelAsync">loadModelAsync(number)
         <span class="release-stage public"></span>
@@ -2182,7 +2233,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_loadYtyp.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.loadYtyp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1980">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1993">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_loadYtyp" data-uid="@altmp/altv-types.alt-client.loadYtyp">loadYtyp(string)
         <span class="release-stage public"></span>
@@ -2466,7 +2517,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_offServer.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.offServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1678">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1691">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_offServer" data-uid="@altmp/altv-types.alt-client.offServer">offServer(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2518,7 +2569,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_on.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.on%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1686">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1699">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_on" data-uid="@altmp/altv-types.alt-client.on">on&lt;K extends keyof IClientEvent&gt;(K, IClientEvent[K])
         <span class="release-stage public"></span>
@@ -2567,7 +2618,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_on_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.on_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1686">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1699">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_on_1" data-uid="@altmp/altv-types.alt-client.on_1">on(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2616,7 +2667,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_onServer.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.onServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1718">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1731">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_onServer" data-uid="@altmp/altv-types.alt-client.onServer">onServer(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2665,7 +2716,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_onServer_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.onServer_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1718">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1731">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_onServer_1" data-uid="@altmp/altv-types.alt-client.onServer_1">onServer((eventName: string, ...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2708,7 +2759,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_once.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.once%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1702">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1715">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_once" data-uid="@altmp/altv-types.alt-client.once">once&lt;K extends keyof IClientEvent&gt;(K, IClientEvent[K])
         <span class="release-stage public"></span>
@@ -2757,7 +2808,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_once_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.once_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1702">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1715">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_once_1" data-uid="@altmp/altv-types.alt-client.once_1">once(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2806,7 +2857,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_onceServer.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.onceServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1736">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1749">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_onceServer" data-uid="@altmp/altv-types.alt-client.onceServer">onceServer(string, (...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2855,7 +2906,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_onceServer_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.onceServer_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1736">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1749">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_onceServer_1" data-uid="@altmp/altv-types.alt-client.onceServer_1">onceServer((eventName: string, ...args: any[]) =&gt; void)
         <span class="release-stage public"></span>
@@ -2898,7 +2949,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_removeGxtText.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.removeGxtText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1753">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1766">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_removeGxtText" data-uid="@altmp/altv-types.alt-client.removeGxtText">removeGxtText(string)
         <span class="release-stage public"></span>
@@ -2938,7 +2989,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_removeIpl.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.removeIpl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1760">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1773">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_removeIpl" data-uid="@altmp/altv-types.alt-client.removeIpl">removeIpl(string)
         <span class="release-stage public"></span>
@@ -2978,7 +3029,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_requestIpl.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.requestIpl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1767">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1780">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_requestIpl" data-uid="@altmp/altv-types.alt-client.requestIpl">requestIpl(string)
         <span class="release-stage public"></span>
@@ -3018,7 +3069,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_resetStat.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.resetStat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1790">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1803">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_resetStat" data-uid="@altmp/altv-types.alt-client.resetStat">resetStat(StatName)
         <span class="release-stage public"></span>
@@ -3058,7 +3109,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setCamFrozen.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setCamFrozen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1799">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1812">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setCamFrozen" data-uid="@altmp/altv-types.alt-client.setCamFrozen">setCamFrozen(boolean)
         <span class="release-stage public"></span>
@@ -3101,7 +3152,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setConfigFlag.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setConfigFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1807">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1820">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setConfigFlag" data-uid="@altmp/altv-types.alt-client.setConfigFlag">setConfigFlag(ConfigFlag, boolean)
         <span class="release-stage public"></span>
@@ -3150,7 +3201,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setCursorPos.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setCursorPos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1830">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1843">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setCursorPos" data-uid="@altmp/altv-types.alt-client.setCursorPos">setCursorPos(shared.IVector2)
         <span class="release-stage public"></span>
@@ -3308,7 +3359,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setMsPerGameMinute.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setMsPerGameMinute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1835">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1848">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setMsPerGameMinute" data-uid="@altmp/altv-types.alt-client.setMsPerGameMinute">setMsPerGameMinute(number)
         <span class="release-stage public"></span>
@@ -3347,7 +3398,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setPedDlcClothes.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setPedDlcClothes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2066">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2079">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setPedDlcClothes" data-uid="@altmp/altv-types.alt-client.setPedDlcClothes">setPedDlcClothes(number, number, number, number, number, number)
         <span class="release-stage public"></span>
@@ -3432,7 +3483,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setPedDlcProp.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setPedDlcProp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2077">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2090">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setPedDlcProp" data-uid="@altmp/altv-types.alt-client.setPedDlcProp">setPedDlcProp(number, number, number, number, number)
         <span class="release-stage public"></span>
@@ -3508,7 +3559,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setRotationVelocity.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setRotationVelocity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1845">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1858">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setRotationVelocity" data-uid="@altmp/altv-types.alt-client.setRotationVelocity">setRotationVelocity(number, number, number, number)
         <span class="release-stage public"></span>
@@ -3575,7 +3626,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setStat.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setStat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1853">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1866">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setStat" data-uid="@altmp/altv-types.alt-client.setStat">setStat(StatName, number)
         <span class="release-stage public"></span>
@@ -3689,7 +3740,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setWatermarkPosition.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setWatermarkPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2115">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2128">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setWatermarkPosition" data-uid="@altmp/altv-types.alt-client.setWatermarkPosition">setWatermarkPosition(WatermarkPosition)
         <span class="release-stage public"></span>
@@ -3729,7 +3780,7 @@ This handling applies to particular vehicle instance, as opposed to the <a class
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setWeatherCycle.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setWeatherCycle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1864">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1877">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setWeatherCycle" data-uid="@altmp/altv-types.alt-client.setWeatherCycle">setWeatherCycle(number[], number[])
         <span class="release-stage public"></span>
@@ -3782,7 +3833,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_setWeatherSyncActive.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.setWeatherSyncActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1873">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1886">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_setWeatherSyncActive" data-uid="@altmp/altv-types.alt-client.setWeatherSyncActive">setWeatherSyncActive(boolean)
         <span class="release-stage public"></span>
@@ -3825,7 +3876,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_showCursor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.showCursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1882">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1895">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_showCursor" data-uid="@altmp/altv-types.alt-client.showCursor">showCursor(boolean)
         <span class="release-stage public"></span>
@@ -3868,7 +3919,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_takeScreenshot.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.takeScreenshot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1774">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1787">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_takeScreenshot" data-uid="@altmp/altv-types.alt-client.takeScreenshot">takeScreenshot()
         <span class="release-stage public"></span>
@@ -3903,7 +3954,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_takeScreenshotGameOnly.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.takeScreenshotGameOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1783">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1796">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_takeScreenshotGameOnly" data-uid="@altmp/altv-types.alt-client.takeScreenshotGameOnly">takeScreenshotGameOnly()
         <span class="release-stage public"></span>
@@ -3941,7 +3992,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_toggleGameControls.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.toggleGameControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1891">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1904">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_toggleGameControls" data-uid="@altmp/altv-types.alt-client.toggleGameControls">toggleGameControls(boolean)
         <span class="release-stage public"></span>
@@ -3984,7 +4035,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_toggleVoiceControls.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.toggleVoiceControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1893">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1906">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_toggleVoiceControls" data-uid="@altmp/altv-types.alt-client.toggleVoiceControls">toggleVoiceControls(boolean)
         <span class="release-stage public"></span>
@@ -4022,7 +4073,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_unloadYtyp.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.unloadYtyp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1992">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2005">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_unloadYtyp" data-uid="@altmp/altv-types.alt-client.unloadYtyp">unloadYtyp(string)
         <span class="release-stage public"></span>
@@ -4121,7 +4172,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_fps.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.fps%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2129">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2142">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_fps" data-uid="@altmp/altv-types.alt-client.fps">fps
         <span class="release-stage alpha"></span>
@@ -4176,7 +4227,7 @@ The weathers and multipliers array has to be of the same length.</p>
           <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_ping.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.ping%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
         </span>
         <span class="small pull-right mobile-hide">
-          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2122">View Source</a>
+          <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2135">View Source</a>
         </span>
         <h4 id="_altmp_altv_types_alt_client_ping" data-uid="@altmp/altv-types.alt-client.ping">ping
         <span class="release-stage alpha"></span>
@@ -4264,11 +4315,9 @@ The weathers and multipliers array has to be of the same length.</p>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw==" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js" integrity="sha512-zol3kFQ5tnYhL7PzGt0LnllHHVWRGt2bTCIywDiScVvLIlaDOVJ6sPdJTVi0m3rA660RT+yZxkkRzMbb1L8Zkw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js" integrity="sha512-axd5V66bnXpNVQzm1c7u1M614TVRXXtouyWCE+eMYl8ALK8ePJEs96Xtx7VVrPBc0UraCn63U1+ARFI3ofW+aA==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../../styles/docfx.js"></script>

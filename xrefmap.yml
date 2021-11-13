@@ -3192,6 +3192,9 @@ references:
 - uid: '@altmp/altv-types.alt-client.emitServer'
   name: emitServer(string, any[])
   href: js/api/alt-client.html
+- uid: '@altmp/altv-types.alt-client.emitServerRaw'
+  name: emitServerRaw(string, any[])
+  href: js/api/alt-client.html
 - uid: '@altmp/altv-types.alt-client.Entity'
   name: Entity
   href: js/api/alt-client.Entity.html
@@ -8668,6 +8671,9 @@ references:
 - uid: '@altmp/altv-types.alt-server.emitAllClients'
   name: emitAllClients(string, any[])
   href: js/api/alt-server.html
+- uid: '@altmp/altv-types.alt-server.emitAllClientsRaw'
+  name: emitAllClientsRaw(string, any[])
+  href: js/api/alt-server.html
 - uid: '@altmp/altv-types.alt-server.emitClient'
   name: emitClient(Player, string, any[])
   href: js/api/alt-server.html
@@ -8676,6 +8682,9 @@ references:
   href: js/api/alt-server.html
 - uid: '@altmp/altv-types.alt-server.emitClient_2'
   name: emitClient(Player[], string, any[])
+  href: js/api/alt-server.html
+- uid: '@altmp/altv-types.alt-server.emitClientRaw'
+  name: emitClientRaw(Player[], string, any[])
   href: js/api/alt-server.html
 - uid: '@altmp/altv-types.alt-server.Entity'
   name: Entity

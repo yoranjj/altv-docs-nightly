@@ -1,3 +1,7 @@
+.modal {
+    background: var(--sidebar-bg-color);
+}
+
 /* Discord Style */
 
 ::-webkit-scrollbar
@@ -376,6 +380,24 @@ button.btn-link:active
 .btn-link.search-back::before
 {
     content: '\f060';
+    color: var(--topbar-icon-color);
+}
+
+.btn-link.search-help
+{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+.btn-link.search-help::before
+{
+    content: '\f059';
+    font-size: 10px;
+    line-height: 12px;
+    vertical-align: top;
     color: var(--topbar-icon-color);
 }
 
@@ -837,8 +859,8 @@ code tr > td:first-child
 .search-bar div[role="textbox"]
 {
     width: 112px;
-    height: 100%;
-    padding: 1px 0;
+    /*height: 100%;*/
+    /*padding: 1px 0;*/
     margin-left: -4px;
     white-space: pre;
     font-size: 15px;
@@ -867,17 +889,17 @@ code tr > td:first-child
     width: 208px;
 }
 
-.search-bar div[role="textbox"] > .keyword
+.search-bar div[role="textbox"] > .field-term
 {
     padding: 1px 2px;
-    font-weight: bold;
     border-radius: 2px;
     background-color: var(--search-text-filter-bg-color);
     color: var(--search-text-filter-color);
 }
 
-.search-bar div[role="textbox"] > .keyword:first-of-type
+.search-bar div[role="textbox"] > .field-term .field
 {
+    padding-right: 4px;
 }
 
 .search-bar.float div[placeholder]:not([placeholder=""])
@@ -905,6 +927,7 @@ code tr > td:first-child
 .search-bar .btn-link
 {
     width: unset;
+    padding: 1px 0;
     margin-left: 8px;
 }
 
@@ -1204,7 +1227,7 @@ ul.contribution > li:not(:last-child):after
         left: 40px;
     }
 
-    .search-bar div[role="textbox"] > .keyword
+    .search-bar div[role="textbox"] > .field-term
     {
         background-color: unset;
     }

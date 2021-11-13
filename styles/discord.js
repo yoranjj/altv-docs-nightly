@@ -1,5 +1,5 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
-/*
+/**
  * Swap to div is necessary to skip code highlight process.
  */
 $(".lang-mermaid").each(function() {
@@ -10,7 +10,7 @@ $(".lang-mermaid").each(function() {
   oldEl.replaceWith(newEl);
 });
 
-/*
+/**
  * Remove rel metadata temporarily for DocFx script to disable search function
  */
 var rel = $("meta[property='docfx\\:rel']").detach();
@@ -18,15 +18,22 @@ var rel = $("meta[property='docfx\\:rel']").detach();
 const filterKeywords = {
   "type": "api,article",
   "title": "title",
-  "keywords": "keywords",
-  "langs": "js,ts,cs,lua"
+  "keyword": "keyword",
+  "lang": "js,ts,cs,lua",
 };
-const filterRegex = new RegExp("(\\w+):\\s*(\\w+)?", "gi")
+
+function getFilterKeywords() {
+  return Object.keys(filterKeywords);
+}
+
+const filterRegex = new RegExp("(" + getFilterKeywords().join('|') + "):([^\\s]*)", 'g');
 
 const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
 switchTheme();
 
-$.ajaxSetup({ mimeType: "text/plain" });
+$.ajaxSetup({
+  mimeType: "text/plain",
+});
 
 var query;
 var worker;
@@ -92,6 +99,22 @@ function enableSearch() {
       });
     });
 
+    $(window).on("keydown", function(ev) {
+      if (!ev.ctrlKey && !ev.metaKey || ev.keyCode !== 70) {
+          return;
+      }
+      ev.preventDefault();
+      $("#search-query").focus();
+    });
+
+    $("#search-query").on("keydown", function(ev) {
+      if (ev.keyCode !== 27) {
+          return;
+      }
+      ev.preventDefault();
+      $("#search-query").blur();
+    });
+
     $("body").bind("queryReady", function() {
       var hits = lunrIndex.search(query.split(/\s+/g).map(term => {
           return !term.startsWith('-') ? (!term.startsWith('+') ? '+' + term : term.substring(1)) : term;
@@ -105,8 +128,9 @@ function enableSearch() {
       handleSearchResults(results);
     });
 
-    for (const key of Object.keys(filterKeywords)) {
-      $("#search-menu").append("<div class=\"option\"><span class=\"filter\">"
+    for (let i = 0; i < getFilterKeywords().length; i++) {
+      const key = getFilterKeywords()[i];
+      $("#search-menu").append("<div class=\"option\" data-id=\"" + i + "\"><span class=\"filter\">"
        + key + ":</span><span class=\"answer\">"
         + filterKeywords[key] + "</span></div>");
     }
@@ -158,6 +182,9 @@ function addSearchEvent() {
     $("#search-menu").removeClass("active");
   });
   $("#search-query").on("keydown", function(ev) {
+    if (ev.keyCode === 27) {
+      return;
+    }
     const el = $(ev.currentTarget);
     const prevVal = el.data("text");
     const curVal = el.text();
@@ -240,11 +267,7 @@ function toggleSearch() {
 }
 
 function addSearchKeyword(el) {
-  let str = $(el).text();
-  for (const word of str.matchAll(filterRegex)) {
-    if (Object.keys(filterKeywords).indexOf(word[1]) === -1) continue;
-    str = str.replaceAll(new RegExp("(" + Object.keys(filterKeywords).join('|') + "):([^\\s]*)", 'g'), "<span class=\"keyword $1\">$1:$2</span>");
-  }
+  const str = $(el).text().replaceAll(filterRegex, "<span class=\"field-term $1\"><span class=\"field\">$1:</span><span class=\"term\">$2</span></span>");
   $(el).html(str).trigger("keydown");
 }
 
@@ -253,7 +276,7 @@ function isSearchQueryValid(el) {
   const str = $(el).text();
   const keywords = str.matchAll(filterRegex);
   for (const word of keywords) {
-    if (Object.keys(filterKeywords).indexOf(word[1]) === -1 || word[2] == null) return false;
+    if (getFilterKeywords().indexOf(word[1]) === -1 || word[2] == null) return false;
   }
   return str.length >= 3;
 }
@@ -382,11 +405,9 @@ function convertQueryIntoWords(query) {
   return query.split(/\s+/g).map(term => {
     if (term === "" || term.startsWith('-')) return null;
     const keyword = term.split(':')[0];
-    const hasKeyword = Object.keys(filterKeywords).includes(keyword);
-    if (hasKeyword && keyword !== "title") return null;
-    // if (hasKeyword) {
-    //   term = term.substring(keyword.length + 1);
-    // }
+    const hasKeyword = getFilterKeywords().includes(keyword);
+    if (hasKeyword && keyword !== "title" && keyword !== "keywords") return null;
+    // if (hasKeyword) { term = term.substring(keyword.length + 1); }
     return term.split('^')[0].split('~')[0].replace("+", "");
   }).filter(word => word != null);
 }
@@ -408,7 +429,7 @@ function relativeUrlToAbsoluteUrl(currentUrl, relativeUrl) {
 
 function extractContentBrief(content) {
   var briefOffset = 512;
-  var words = convertQueryIntoWords(query).filter(word => !word.startsWith("title:"));
+  var words = convertQueryIntoWords(query).filter(word => !word.startsWith("title:") && !word.startsWith("keywords:"));
   var queryIndex = content.indexOf(words[0]);
   var briefContent;
   if (queryIndex > briefOffset) {
